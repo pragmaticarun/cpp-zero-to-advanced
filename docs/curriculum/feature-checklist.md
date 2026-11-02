@@ -154,6 +154,38 @@ Use it as a checklist: tick off what you can explain to a colleague without note
 | Rewritten comparison candidates (`a != b` from `==`) | C++20 | [Lesson 4.5](../week04/lesson05.md) |
 | Overloading `[]` (multi-dimensional subscript in C++23), `()` | C++23 | [Lesson 4.5](../week04/lesson05.md) |
 
+## OOP: value semantics
+
+| Feature | Standard | Taught in |
+|---|---|---|
+| Copy constructor, copy assignment operator | C++98 | [Lesson 5.1](../week05/lesson01.md) |
+| Shallow vs deep copy | — | [Lesson 5.1](../week05/lesson01.md) |
+| Rule of Three | C++98 | [Lesson 5.1](../week05/lesson01.md) |
+| Copy-and-swap idiom, self-assignment | C++98 | [Lesson 5.1](../week05/lesson01.md) |
+| Implicitly generated special member functions | C++11 | [Lesson 5.1](../week05/lesson01.md) |
+| Value categories: lvalue, prvalue, xvalue (glvalue, rvalue) | C++11 | [Lesson 5.2](../week05/lesson02.md) |
+| Rvalue references `T&&` | C++11 | [Lesson 5.2](../week05/lesson02.md) |
+| Overloading on `&` vs `&&` parameters | C++11 | [Lesson 5.2](../week05/lesson02.md) |
+| Temporaries and temporary materialization | C++17 | [Lesson 5.2](../week05/lesson02.md) |
+| `decltype((x))` reveals value category | C++11 | [Lesson 5.2](../week05/lesson02.md) |
+| Move constructor, move assignment | C++11 | [Lesson 5.3](../week05/lesson03.md) |
+| `std::move` (it's just a cast) | C++11 | [Lesson 5.3](../week05/lesson03.md) |
+| Moved-from state: valid but unspecified | C++11 | [Lesson 5.3](../week05/lesson03.md) |
+| `noexcept` moves and `std::vector` reallocation | C++11 | [Lesson 5.3](../week05/lesson03.md) |
+| Rule of Five, Rule of Zero | C++11 | [Lesson 5.3](../week05/lesson03.md) |
+| Move-only types | C++11 | [Lesson 5.3](../week05/lesson03.md) |
+| Guaranteed copy elision for prvalues | C++17 | [Lesson 5.4](../week05/lesson04.md) |
+| Named return value optimization (NRVO) | C++98 | [Lesson 5.4](../week05/lesson04.md) |
+| Implicit move on return | C++20 | [Lesson 5.4](../week05/lesson04.md) |
+| Sink parameters: pass by value and move | C++11 | [Lesson 5.4](../week05/lesson04.md) |
+| Aggregates and aggregate initialization | C++98 | [Lesson 5.5](../week05/lesson05.md) |
+| Designated initializers | C++20 | [Lesson 5.5](../week05/lesson05.md) |
+| Aggregate init with parentheses | C++20 | [Lesson 5.5](../week05/lesson05.md) |
+| Structured bindings | C++17 | [Lesson 5.5](../week05/lesson05.md) |
+| Structured bindings for your own types (tuple protocol) | C++17 | [Lesson 5.5](../week05/lesson05.md) |
+| User-defined literals | C++11 | [Lesson 5.5](../week05/lesson05.md) |
+| Standard literals: `s`, `sv`, `ms`, `i` | C++14 | [Lesson 5.5](../week05/lesson05.md) |
+
 ## C++26 preview items
 
 C++26 was finalized in 2025–2026; compilers are still implementing it. These are covered in

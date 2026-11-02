@@ -1,0 +1,9 @@
+  ctor(4)
+  copy ctor
+a[0]=1.5 b[0]=9
+  ctor(2)
+  copy ctor
+  copy assign (swap)
+  copy ctor
+  copy assign (swap)
+c.size()=4 c[0]=1.5

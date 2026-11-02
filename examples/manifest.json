@@ -330,5 +330,65 @@
   "run": true,
   "san": [],
   "std": "c++23"
+ },
+ "examples/week05/assignment_solution.cpp": {
+  "compare": true,
+  "expect": "ok",
+  "flags": [],
+  "lesson": "week05/assignment",
+  "maybe_unsupported": false,
+  "run": true,
+  "san": [],
+  "std": "c++20"
+ },
+ "examples/week05/lesson01.cpp": {
+  "compare": true,
+  "expect": "ok",
+  "flags": [],
+  "lesson": "week05/lesson01",
+  "maybe_unsupported": false,
+  "run": true,
+  "san": [],
+  "std": "c++20"
+ },
+ "examples/week05/lesson02.cpp": {
+  "compare": true,
+  "expect": "ok",
+  "flags": [],
+  "lesson": "week05/lesson02",
+  "maybe_unsupported": false,
+  "run": true,
+  "san": [],
+  "std": "c++20"
+ },
+ "examples/week05/lesson03.cpp": {
+  "compare": true,
+  "expect": "ok",
+  "flags": [],
+  "lesson": "week05/lesson03",
+  "maybe_unsupported": false,
+  "run": true,
+  "san": [],
+  "std": "c++20"
+ },
+ "examples/week05/lesson04.cpp": {
+  "compare": true,
+  "expect": "ok",
+  "flags": [],
+  "lesson": "week05/lesson04",
+  "maybe_unsupported": false,
+  "run": true,
+  "san": [],
+  "std": "c++20"
+ },
+ "examples/week05/lesson05.cpp": {
+  "compare": true,
+  "expect": "ok",
+  "flags": [],
+  "lesson": "week05/lesson05",
+  "maybe_unsupported": false,
+  "run": true,
+  "san": [],
+  "std": "c++20"
  }
 }

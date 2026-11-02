@@ -1,0 +1,8 @@
+x: lvalue, 42: prvalue, x + 1: prvalue, std::move(x): xvalue, make(): prvalue
+  take(const&)  [copy if needed]: named
+  take(&&)      [may steal]: made
+    inside, `s` is an lvalue
+  take(&&)      [may steal]: temp
+    inside, `s` is an lvalue
+  take(&&)      [may steal]: named
+    inside, `s` is an lvalue

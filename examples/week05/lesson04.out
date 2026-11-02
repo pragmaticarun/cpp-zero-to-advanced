@@ -1,0 +1,14 @@
+prvalue:
+  construct prvalue
+named:
+  construct named
+either:
+  construct x
+  construct y
+  move x
+sink from lvalue:
+  COPY prvalue
+  move prvalue
+sink from rvalue:
+  move named!
+  move named!

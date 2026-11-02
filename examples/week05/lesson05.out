@@ -1,0 +1,6 @@
+aac 128000 2 1
+0,128,128
+cd=44100 dvd=48000 
+already had cd
+span 3..9
+48000 Hz, 20 ms, samples/frame = 960

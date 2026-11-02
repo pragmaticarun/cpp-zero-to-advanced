@@ -1,0 +1,4 @@
+copies=1 moves=1 a.size()=0 c.size()=33177600
+vector<Frame>: copies=0 moves=12
+vector<NoexceptLess>: copies=7 moves=0
+after moving a const: copies=8 (one more copy)

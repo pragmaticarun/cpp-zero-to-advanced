@@ -74,6 +74,15 @@ nav:
   - 4.5 Operator overloading and the spaceship operator <=>: week04/lesson05.md
   - Week quiz: week04/quiz.md
   - Programming assignment: week04/assignment.md
+- 'Week 5: Value semantics: copy, move, and value categories':
+  - Overview: week05/index.md
+  - 5.1 Copy semantics and the Rule of Three: week05/lesson01.md
+  - '5.2 Value categories: lvalues, prvalues, xvalues': week05/lesson02.md
+  - 5.3 Move semantics, std::move, and the Rules of Five and Zero: week05/lesson03.md
+  - 5.4 Copy elision, RVO, and returning by value: week05/lesson04.md
+  - 5.5 Aggregates, designated initializers, structured bindings, user-defined literals: week05/lesson05.md
+  - Week quiz: week05/quiz.md
+  - Programming assignment: week05/assignment.md
 - Capstones:
   - Capstone overview: capstone/index.md
   - 'A: Concurrent task library + CLI': capstone/threadpool.md
