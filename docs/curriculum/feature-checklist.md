@@ -217,6 +217,42 @@ Use it as a checklist: tick off what you can explain to a colleague without note
 | `std::any` | C++17 | [Lesson 6.5](../week06/lesson05.md) |
 | `-fno-rtti` and its consequences | — | [Lesson 6.5](../week06/lesson05.md) |
 
+## Templates & generic programming
+
+| Feature | Standard | Taught in |
+|---|---|---|
+| Function templates | C++98 | [Lesson 7.1](../week07/lesson01.md) |
+| Template argument deduction | C++98 | [Lesson 7.1](../week07/lesson01.md) |
+| Explicit template arguments | C++98 | [Lesson 7.1](../week07/lesson01.md) |
+| Abbreviated function templates (`auto` parameters) | C++20 | [Lesson 7.1](../week07/lesson01.md) |
+| Two-phase lookup, `typename` disambiguator | C++98 | [Lesson 7.1](../week07/lesson01.md) |
+| Templates in headers (instantiation model) | C++98 | [Lesson 7.1](../week07/lesson01.md) |
+| Class templates | C++98 | [Lesson 7.2](../week07/lesson02.md) |
+| Member function templates | C++98 | [Lesson 7.2](../week07/lesson02.md) |
+| Full specialization | C++98 | [Lesson 7.2](../week07/lesson02.md) |
+| Partial specialization | C++98 | [Lesson 7.2](../week07/lesson02.md) |
+| Class template argument deduction (CTAD) and deduction guides | C++17 | [Lesson 7.2](../week07/lesson02.md) |
+| Alias templates (`using`) | C++11 | [Lesson 7.2](../week07/lesson02.md) |
+| Variable templates | C++14 | [Lesson 7.2](../week07/lesson02.md) |
+| Non-type template parameters (NTTP) | C++98 | [Lesson 7.3](../week07/lesson03.md) |
+| `auto` NTTP | C++17 | [Lesson 7.3](../week07/lesson03.md) |
+| Class-type NTTPs (structural types) | C++20 | [Lesson 7.3](../week07/lesson03.md) |
+| Variadic templates, parameter packs, `sizeof...` | C++11 | [Lesson 7.3](../week07/lesson03.md) |
+| Fold expressions | C++17 | [Lesson 7.3](../week07/lesson03.md) |
+| Template template parameters | C++98 | [Lesson 7.3](../week07/lesson03.md) |
+| Forwarding (universal) references `T&&` | C++11 | [Lesson 7.4](../week07/lesson04.md) |
+| Reference collapsing | C++11 | [Lesson 7.4](../week07/lesson04.md) |
+| `std::forward` | C++11 | [Lesson 7.4](../week07/lesson04.md) |
+| `decltype(auto)` return types | C++14 | [Lesson 7.4](../week07/lesson04.md) |
+| Perfect forwarding of packs (`emplace`, `make_unique`) | C++11 | [Lesson 7.4](../week07/lesson04.md) |
+| `<type_traits>` queries and transformations | C++11 | [Lesson 7.5](../week07/lesson05.md) |
+| `_v` and `_t` helpers | C++14/17 | [Lesson 7.5](../week07/lesson05.md) |
+| `if constexpr` | C++17 | [Lesson 7.5](../week07/lesson05.md) |
+| SFINAE and `std::enable_if` | C++11 | [Lesson 7.5](../week07/lesson05.md) |
+| `std::void_t` detection idiom | C++17 | [Lesson 7.5](../week07/lesson05.md) |
+| `std::declval` | C++11 | [Lesson 7.5](../week07/lesson05.md) |
+| `std::conditional`, `std::decay`, `std::remove_cvref` | C++11/20 | [Lesson 7.5](../week07/lesson05.md) |
+
 ## C++26 preview items
 
 C++26 was finalized in 2025–2026; compilers are still implementing it. These are covered in

@@ -92,6 +92,15 @@ nav:
   - '6.5 RTTI: typeid, dynamic_cast, and std::any': week06/lesson05.md
   - Week quiz: week06/quiz.md
   - Programming assignment: week06/assignment.md
+- 'Week 7: Templates: generic programming':
+  - Overview: week07/index.md
+  - 7.1 Function templates and argument deduction: week07/lesson01.md
+  - 7.2 Class templates, specialization, and CTAD: week07/lesson02.md
+  - 7.3 Non-type parameters, variadic templates, and fold expressions: week07/lesson03.md
+  - 7.4 Forwarding references and perfect forwarding: week07/lesson04.md
+  - 7.5 Type traits, if constexpr, and SFINAE: week07/lesson05.md
+  - Week quiz: week07/quiz.md
+  - Programming assignment: week07/assignment.md
 - Capstones:
   - Capstone overview: capstone/index.md
   - 'A: Concurrent task library + CLI': capstone/threadpool.md

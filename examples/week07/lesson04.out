@@ -1,0 +1,9 @@
+make_logged with 1 arg(s)
+  Track(copy title)
+make_logged with 1 arg(s)
+  Track(move title)
+bad_wrapper with an rvalue:
+  Track(copy title)
+  T is an lvalue reference
+  T is a non-reference
+v[0]=100, name still "Blue in Green"
