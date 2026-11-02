@@ -1,0 +1,3 @@
+ch1 -> 0.8 over 250ms
+error: bad channel
+api v2 (old clients can call v1: 1)

@@ -664,6 +664,64 @@ Use it as a checklist: tick off what you can explain to a colleague without note
 | Safe integer handling: `std::in_range`, `std::cmp_less` | C++20 | [Lesson 15.6](../week15/lesson06.md) |
 | Erroneous behaviour for uninitialized reads | C++26 | [Lesson 15.6](../week15/lesson06.md) |
 
+## Interop
+
+| Feature | Standard | Taught in |
+|---|---|---|
+| Designing a C ABI wrapper around C++ (opaque handles) | — | [Lesson 16.1](../week16/lesson01.md) |
+| Exceptions must not cross C boundaries | C++11 | [Lesson 16.1](../week16/lesson01.md) |
+| Callbacks with `void*` user data | — | [Lesson 16.1](../week16/lesson01.md) |
+| pybind11 / nanobind bindings | — | [Lesson 16.1](../week16/lesson01.md) |
+| JNI and the Android NDK | — | [Lesson 16.1](../week16/lesson01.md) |
+| Ownership across language boundaries | — | [Lesson 16.1](../week16/lesson01.md) |
+
+## Embedded
+
+| Feature | Standard | Taught in |
+|---|---|---|
+| Freestanding implementations; `-fno-exceptions`, `-fno-rtti` | — | [Lesson 16.2](../week16/lesson02.md) |
+| Memory-mapped registers with `volatile` | C++98 | [Lesson 16.2](../week16/lesson02.md) |
+| No dynamic allocation after init; static pools | — | [Lesson 16.2](../week16/lesson02.md) |
+| Fixed-point arithmetic | — | [Lesson 16.2](../week16/lesson02.md) |
+| `constexpr` lookup tables | C++11/20 | [Lesson 16.2](../week16/lesson02.md) |
+| Interrupt-safe data sharing (atomics, critical sections) | C++11 | [Lesson 16.2](../week16/lesson02.md) |
+| `std::bit_cast`, `<bit>` operations | C++20 | [Lesson 16.2](../week16/lesson02.md) |
+| Deprecated compound `volatile` operations | C++20 | [Lesson 16.2](../week16/lesson02.md) |
+
+## Design
+
+| Feature | Standard | Taught in |
+|---|---|---|
+| Strategy via `std::function`, templates, or concepts | C++11/20 | [Lesson 16.3](../week16/lesson03.md) |
+| Observer with lifetime safety (`weak_ptr` / tokens) | C++11 | [Lesson 16.3](../week16/lesson03.md) |
+| Factory and registry | — | [Lesson 16.3](../week16/lesson03.md) |
+| Visitor via `std::variant` + `std::visit` | C++17 | [Lesson 16.3](../week16/lesson03.md) |
+| Pimpl idiom (recap) and type erasure (recap) | C++11 | [Lesson 16.3](../week16/lesson03.md) |
+| RAII scope guards | C++11 | [Lesson 16.3](../week16/lesson03.md) |
+| Policy-based design | C++98 | [Lesson 16.3](../week16/lesson03.md) |
+| Strong types to prevent argument mix-ups | C++11 | [Lesson 16.4](../week16/lesson04.md) |
+| `[[nodiscard]]` (with reason), `[[deprecated]]` | C++17/20 | [Lesson 16.4](../week16/lesson04.md) |
+| Choosing an error-handling policy for a library | — | [Lesson 16.4](../week16/lesson04.md) |
+| Const-correctness and value semantics in interfaces | C++98 | [Lesson 16.4](../week16/lesson04.md) |
+| Inline namespaces for API versioning | C++11 | [Lesson 16.4](../week16/lesson04.md) |
+| Header hygiene and minimal includes | — | [Lesson 16.4](../week16/lesson04.md) |
+| Semantic versioning and ABI policy | — | [Lesson 16.4](../week16/lesson04.md) |
+
+## C++26 preview
+
+| Feature | Standard | Taught in |
+|---|---|---|
+| Static reflection (`^^T`, `std::meta`, splicers) | C++26 (preview) | [Lesson 16.5](../week16/lesson05.md) |
+| Contracts: `pre`, `post`, `contract_assert` | C++26 (preview) | [Lesson 16.5](../week16/lesson05.md) |
+| `std::execution` senders/receivers | C++26 (preview) | [Lesson 16.5](../week16/lesson05.md) |
+| `std::inplace_vector` | C++26 (preview) | [Lesson 16.5](../week16/lesson05.md) |
+| Pack indexing `Ts...[N]` | C++26 (preview) | [Lesson 16.5](../week16/lesson05.md) |
+| `= delete("reason")` | C++26 (preview) | [Lesson 16.5](../week16/lesson05.md) |
+| Placeholder variables `_` | C++26 (preview) | [Lesson 16.5](../week16/lesson05.md) |
+| `#embed` | C++26 (preview) | [Lesson 16.5](../week16/lesson05.md) |
+| `std::simd`, `std::hazard_pointer`, `std::rcu` | C++26 (preview) | [Lesson 16.5](../week16/lesson05.md) |
+| Erroneous behaviour; hardened standard library | C++26 (preview) | [Lesson 16.5](../week16/lesson05.md) |
+
 ## C++26 preview items
 
 C++26 was finalized in 2025–2026; compilers are still implementing it. These are covered in

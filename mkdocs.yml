@@ -178,6 +178,15 @@ nav:
   - 15.6 Security hardening and the C++ Core Guidelines: week15/lesson06.md
   - Week quiz: week15/quiz.md
   - Programming assignment: week15/assignment.md
+- 'Week 16: C++ in the real world: interop, embedded, design, and what''s next':
+  - Overview: week16/index.md
+  - '16.1 Interoperability: C, Python (pybind11), and Java/Android (JNI)': week16/lesson01.md
+  - 16.2 Embedded and real-time C++: week16/lesson02.md
+  - 16.3 Design patterns in modern C++: week16/lesson03.md
+  - 16.4 API and library design: week16/lesson04.md
+  - '16.5 C++26 preview: reflection, contracts, std::execution, and more': week16/lesson05.md
+  - Week quiz: week16/quiz.md
+  - Programming assignment: week16/assignment.md
 - Capstones:
   - Capstone overview: capstone/index.md
   - 'A: Concurrent task library + CLI': capstone/threadpool.md

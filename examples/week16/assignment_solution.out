@@ -1,0 +1,4 @@
+kick -> kick.wav
+snare -> (evicted)
+small buffer -> rc=3
+create(0) -> NULL

@@ -1,0 +1,7 @@
+rate = 48000
+bits = 24
+gain = 0.5
+mean 2
+precondition failed: !xs.empty()
+true true false size 2
+add_sat16(30000, 10000) = 32767

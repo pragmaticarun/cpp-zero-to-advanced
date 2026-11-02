@@ -1,0 +1,3 @@
+rc=0 level=0.500
+negative length -> rc=1 (exception stayed inside C++)
+null handle -> rc=1

@@ -1,0 +1,12 @@
+linear 3, step 0
+circle area 3.14159
+rect area 6
+ui got -6
+logger got -6
+ui got -3
+listeners now 1
+delay -> delay
+reverb -> reverb
+chorus -> unknown effect
+doing work
+scope guard ran
