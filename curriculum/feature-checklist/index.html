@@ -1,0 +1,2264 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A friendly, intuition-first C++ course, from your first program to lock-free queues and coroutines.">
+      
+      
+      
+        <link rel="canonical" href="https://pragmaticarun.github.io/cpp-zero-to-advanced/curriculum/feature-checklist/">
+      
+      
+        <link rel="prev" href="../../setup/">
+      
+      
+        <link rel="next" href="../../week01/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>Feature checklist - C++ from Zero to Advanced</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#feature-checklist" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="C++ from Zero to Advanced" class="md-header__button md-logo" aria-label="C++ from Zero to Advanced" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            C++ from Zero to Advanced
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Feature checklist
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/pragmaticarun/cpp-zero-to-advanced" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    cpp-zero-to-advanced
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="C++ from Zero to Advanced" class="md-nav__button md-logo" aria-label="C++ from Zero to Advanced" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    C++ from Zero to Advanced
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/pragmaticarun/cpp-zero-to-advanced" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    cpp-zero-to-advanced
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-take/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    How to take this course
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Feature checklist
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Feature checklist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basics-toolchain-compilation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basics: toolchain &amp; compilation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basics-types-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basics: types &amp; values
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basics-control-flow-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basics: control flow &amp; functions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basics-memory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basics: memory
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c26-preview-items" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C++26 preview items
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../week01/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Week 1: Getting started: toolchain, compilation, types
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Week 1: Getting started: toolchain, compilation, types
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../week01/lesson01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.1 Hello, toolchain: compilers, CMake and Compiler Explorer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../week01/lesson02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.2 The compilation model: preprocessor, translation units, linking, ODR
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../week01/lesson03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.3 Fundamental types, literals, and fixed-width integers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../week01/lesson04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.4 Variables and initialization: auto, const, constexpr
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../week01/lesson05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.5 Operators, integer promotion and narrowing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../week01/quiz/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Week quiz
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../week01/assignment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programming assignment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../week02/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Week 2: Control flow, functions, references, scope
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Week 2: Control flow, functions, references, scope
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../week02/lesson01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.1 Control flow: if, switch, loops, and range-for
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../week02/lesson02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.2 Functions, overloading and default arguments
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../week02/lesson03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.3 References, const, and how to pass parameters
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../week02/lesson04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.4 Scope, lifetime, storage duration and namespaces
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../week02/lesson05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.5 Enums, structs and attributes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../week02/quiz/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Week quiz
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../week02/assignment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programming assignment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../week03/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Week 3: Memory: arrays, pointers, strings, bits
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Week 3: Memory: arrays, pointers, strings, bits
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../week03/lesson01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.1 Arrays: C arrays, std::array, and a first look at std::span
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../week03/lesson02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.2 Pointers: addresses, arithmetic, and const
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../week03/lesson03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.3 Dynamic memory and a first map of undefined behaviour
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../week03/lesson04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.4 Strings: C strings, std::string, and std::string_view
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../week03/lesson05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.5 Bits and bytes: bitwise operators, std::byte, and <bit>
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../week03/quiz/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Week quiz
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../week03/assignment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programming assignment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../capstone/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capstones
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Capstones
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../capstone/threadpool/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A: Concurrent task library + CLI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../capstone/ringbuffer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    B: Embedded ring buffer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sources & further reading
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    License
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basics-toolchain-compilation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basics: toolchain &amp; compilation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basics-types-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basics: types &amp; values
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basics-control-flow-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basics: control flow &amp; functions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basics-memory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basics: memory
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c26-preview-items" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C++26 preview items
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="feature-checklist">Feature checklist<a class="headerlink" href="#feature-checklist" title="Permanent link">&para;</a></h1>
+<p>This page lists the important C++ language features and standard library topics, each mapped to the lesson
+that teaches it and tagged with the standard that introduced it (or made it usable in its modern form).
+It is <strong>generated from the lesson sources</strong>, so if a row is here, the lesson really covers it.</p>
+<p>Tags: <strong>C++98/03</strong> (classic), <strong>C++11</strong>, <strong>C++14</strong>, <strong>C++17</strong>, <strong>C++20</strong>, <strong>C++23</strong>, <strong>C++26 (preview)</strong>.
+A "—" tag means a tool or practice rather than a language feature.</p>
+<p>Use it as a checklist: tick off what you can explain to a colleague without notes.</p>
+<h2 id="basics-toolchain-compilation">Basics: toolchain &amp; compilation<a class="headerlink" href="#basics-toolchain-compilation" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Standard</th>
+<th>Taught in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>g++ / clang++ command line, warnings flags</td>
+<td>—</td>
+<td><a href="../../week01/lesson01/">Lesson 1.1</a></td>
+</tr>
+<tr>
+<td>CMake basics (project, add_executable, target_compile_features)</td>
+<td>—</td>
+<td><a href="../../week01/lesson01/">Lesson 1.1</a></td>
+</tr>
+<tr>
+<td>Compiler Explorer (godbolt.org)</td>
+<td>—</td>
+<td><a href="../../week01/lesson01/">Lesson 1.1</a></td>
+</tr>
+<tr>
+<td><code>main</code>, return codes, <code>std::cout</code></td>
+<td>C++98</td>
+<td><a href="../../week01/lesson01/">Lesson 1.1</a></td>
+</tr>
+<tr>
+<td>Preprocessor: #include, #define, #if, include guards, #pragma once</td>
+<td>C++98</td>
+<td><a href="../../week01/lesson02/">Lesson 1.2</a></td>
+</tr>
+<tr>
+<td>Translation units, declarations vs definitions</td>
+<td>C++98</td>
+<td><a href="../../week01/lesson02/">Lesson 1.2</a></td>
+</tr>
+<tr>
+<td>Linking, undefined reference errors</td>
+<td>—</td>
+<td><a href="../../week01/lesson02/">Lesson 1.2</a></td>
+</tr>
+<tr>
+<td>One Definition Rule (ODR), <code>inline</code> variables</td>
+<td>C++17</td>
+<td><a href="../../week01/lesson02/">Lesson 1.2</a></td>
+</tr>
+<tr>
+<td>Headers vs source files, <code>static</code>/anonymous namespaces (internal linkage)</td>
+<td>C++98</td>
+<td><a href="../../week01/lesson02/">Lesson 1.2</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="basics-types-values">Basics: types &amp; values<a class="headerlink" href="#basics-types-values" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Standard</th>
+<th>Taught in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fundamental types: bool, char, int, long, long long, float, double</td>
+<td>C++98</td>
+<td><a href="../../week01/lesson03/">Lesson 1.3</a></td>
+</tr>
+<tr>
+<td>Integer literals: hex, octal, binary <code>0b</code>, digit separators <code>'</code></td>
+<td>C++14</td>
+<td><a href="../../week01/lesson03/">Lesson 1.3</a></td>
+</tr>
+<tr>
+<td><code>&lt;cstdint&gt;</code>: int32_t, uint8_t, size_t...</td>
+<td>C++11</td>
+<td><a href="../../week01/lesson03/">Lesson 1.3</a></td>
+</tr>
+<tr>
+<td><code>&lt;limits&gt;</code>: std::numeric_limits</td>
+<td>C++98</td>
+<td><a href="../../week01/lesson03/">Lesson 1.3</a></td>
+</tr>
+<tr>
+<td><code>char8_t</code>, <code>char16_t</code>, <code>char32_t</code></td>
+<td>C++20</td>
+<td><a href="../../week01/lesson03/">Lesson 1.3</a></td>
+</tr>
+<tr>
+<td><code>sizeof</code>, <code>alignof</code></td>
+<td>C++11</td>
+<td><a href="../../week01/lesson03/">Lesson 1.3</a></td>
+</tr>
+<tr>
+<td><code>nullptr</code></td>
+<td>C++11</td>
+<td><a href="../../week01/lesson03/">Lesson 1.3</a></td>
+</tr>
+<tr>
+<td>Floating point basics and precision</td>
+<td>C++98</td>
+<td><a href="../../week01/lesson03/">Lesson 1.3</a></td>
+</tr>
+<tr>
+<td>Variable initialization forms: <code>=</code>, <code>()</code>, <code>{}</code></td>
+<td>C++11</td>
+<td><a href="../../week01/lesson04/">Lesson 1.4</a></td>
+</tr>
+<tr>
+<td>Brace initialization prevents narrowing</td>
+<td>C++11</td>
+<td><a href="../../week01/lesson04/">Lesson 1.4</a></td>
+</tr>
+<tr>
+<td><code>auto</code> type deduction</td>
+<td>C++11</td>
+<td><a href="../../week01/lesson04/">Lesson 1.4</a></td>
+</tr>
+<tr>
+<td><code>const</code></td>
+<td>C++98</td>
+<td><a href="../../week01/lesson04/">Lesson 1.4</a></td>
+</tr>
+<tr>
+<td><code>constexpr</code> variables</td>
+<td>C++11</td>
+<td><a href="../../week01/lesson04/">Lesson 1.4</a></td>
+</tr>
+<tr>
+<td><code>decltype</code></td>
+<td>C++11</td>
+<td><a href="../../week01/lesson04/">Lesson 1.4</a></td>
+</tr>
+<tr>
+<td>Uninitialized variables (indeterminate values)</td>
+<td>C++98</td>
+<td><a href="../../week01/lesson04/">Lesson 1.4</a></td>
+</tr>
+<tr>
+<td>Arithmetic, comparison, logical operators; precedence</td>
+<td>C++98</td>
+<td><a href="../../week01/lesson05/">Lesson 1.5</a></td>
+</tr>
+<tr>
+<td>Integer promotion and usual arithmetic conversions</td>
+<td>C++98</td>
+<td><a href="../../week01/lesson05/">Lesson 1.5</a></td>
+</tr>
+<tr>
+<td>Signed/unsigned comparison pitfalls; <code>std::cmp_less</code> etc.</td>
+<td>C++20</td>
+<td><a href="../../week01/lesson05/">Lesson 1.5</a></td>
+</tr>
+<tr>
+<td>Signed overflow is UB; unsigned wraps</td>
+<td>C++98</td>
+<td><a href="../../week01/lesson05/">Lesson 1.5</a></td>
+</tr>
+<tr>
+<td><code>static_cast</code> and other named casts</td>
+<td>C++98</td>
+<td><a href="../../week01/lesson05/">Lesson 1.5</a></td>
+</tr>
+<tr>
+<td>Order of evaluation rules (C++17 changes)</td>
+<td>C++17</td>
+<td><a href="../../week01/lesson05/">Lesson 1.5</a></td>
+</tr>
+<tr>
+<td>Unscoped <code>enum</code> vs scoped <code>enum class</code>, underlying type</td>
+<td>C++11</td>
+<td><a href="../../week02/lesson05/">Lesson 2.5</a></td>
+</tr>
+<tr>
+<td><code>using enum</code></td>
+<td>C++20</td>
+<td><a href="../../week02/lesson05/">Lesson 2.5</a></td>
+</tr>
+<tr>
+<td><code>std::to_underlying</code></td>
+<td>C++23</td>
+<td><a href="../../week02/lesson05/">Lesson 2.5</a></td>
+</tr>
+<tr>
+<td><code>struct</code> basics, default member initializers</td>
+<td>C++11</td>
+<td><a href="../../week02/lesson05/">Lesson 2.5</a></td>
+</tr>
+<tr>
+<td>Attributes: <code>[[nodiscard]]</code>, <code>[[maybe_unused]]</code>, <code>[[deprecated]]</code>, <code>[[noreturn]]</code></td>
+<td>C++17</td>
+<td><a href="../../week02/lesson05/">Lesson 2.5</a></td>
+</tr>
+<tr>
+<td><code>[[likely]]</code> / <code>[[unlikely]]</code>, <code>[[no_unique_address]]</code></td>
+<td>C++20</td>
+<td><a href="../../week02/lesson05/">Lesson 2.5</a></td>
+</tr>
+<tr>
+<td><code>[[assume]]</code></td>
+<td>C++23</td>
+<td><a href="../../week02/lesson05/">Lesson 2.5</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="basics-control-flow-functions">Basics: control flow &amp; functions<a class="headerlink" href="#basics-control-flow-functions" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Standard</th>
+<th>Taught in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>if / else, switch, fallthrough and <code>[[fallthrough]]</code></td>
+<td>C++17</td>
+<td><a href="../../week02/lesson01/">Lesson 2.1</a></td>
+</tr>
+<tr>
+<td><code>if</code> and <code>switch</code> with initializer</td>
+<td>C++17</td>
+<td><a href="../../week02/lesson01/">Lesson 2.1</a></td>
+</tr>
+<tr>
+<td>while, do-while, for, break, continue</td>
+<td>C++98</td>
+<td><a href="../../week02/lesson01/">Lesson 2.1</a></td>
+</tr>
+<tr>
+<td>Range-based for, with initializer</td>
+<td>C++20</td>
+<td><a href="../../week02/lesson01/">Lesson 2.1</a></td>
+</tr>
+<tr>
+<td>Conditional operator <code>?:</code></td>
+<td>C++98</td>
+<td><a href="../../week02/lesson01/">Lesson 2.1</a></td>
+</tr>
+<tr>
+<td>Function declarations, definitions, return types, trailing return type</td>
+<td>C++11</td>
+<td><a href="../../week02/lesson02/">Lesson 2.2</a></td>
+</tr>
+<tr>
+<td>Function overloading and overload resolution basics</td>
+<td>C++98</td>
+<td><a href="../../week02/lesson02/">Lesson 2.2</a></td>
+</tr>
+<tr>
+<td>Default arguments</td>
+<td>C++98</td>
+<td><a href="../../week02/lesson02/">Lesson 2.2</a></td>
+</tr>
+<tr>
+<td><code>auto</code> return type deduction</td>
+<td>C++14</td>
+<td><a href="../../week02/lesson02/">Lesson 2.2</a></td>
+</tr>
+<tr>
+<td>Abbreviated function templates (<code>auto</code> parameters)</td>
+<td>C++20</td>
+<td><a href="../../week02/lesson02/">Lesson 2.2</a></td>
+</tr>
+<tr>
+<td><code>inline</code> functions</td>
+<td>C++98</td>
+<td><a href="../../week02/lesson02/">Lesson 2.2</a></td>
+</tr>
+<tr>
+<td>Recursion</td>
+<td>C++98</td>
+<td><a href="../../week02/lesson02/">Lesson 2.2</a></td>
+</tr>
+<tr>
+<td>Lvalue references <code>T&amp;</code></td>
+<td>C++98</td>
+<td><a href="../../week02/lesson03/">Lesson 2.3</a></td>
+</tr>
+<tr>
+<td>const references bind to temporaries (lifetime extension)</td>
+<td>C++98</td>
+<td><a href="../../week02/lesson03/">Lesson 2.3</a></td>
+</tr>
+<tr>
+<td>Parameter passing guidelines: by value, <code>const T&amp;</code>, <code>T&amp;</code></td>
+<td>—</td>
+<td><a href="../../week02/lesson03/">Lesson 2.3</a></td>
+</tr>
+<tr>
+<td><code>auto</code> deduction drops references and top-level const; <code>auto&amp;</code>, <code>const auto&amp;</code></td>
+<td>C++11</td>
+<td><a href="../../week02/lesson03/">Lesson 2.3</a></td>
+</tr>
+<tr>
+<td>Dangling references</td>
+<td>C++98</td>
+<td><a href="../../week02/lesson03/">Lesson 2.3</a></td>
+</tr>
+<tr>
+<td>Block scope and name hiding</td>
+<td>C++98</td>
+<td><a href="../../week02/lesson04/">Lesson 2.4</a></td>
+</tr>
+<tr>
+<td>Object lifetime; destruction in reverse order</td>
+<td>C++98</td>
+<td><a href="../../week02/lesson04/">Lesson 2.4</a></td>
+</tr>
+<tr>
+<td>Storage duration: automatic, static, thread, dynamic</td>
+<td>C++11</td>
+<td><a href="../../week02/lesson04/">Lesson 2.4</a></td>
+</tr>
+<tr>
+<td>Function-local <code>static</code> (thread-safe init)</td>
+<td>C++11</td>
+<td><a href="../../week02/lesson04/">Lesson 2.4</a></td>
+</tr>
+<tr>
+<td>Namespaces, nested namespaces <code>a::b::c</code>, inline namespaces</td>
+<td>C++17</td>
+<td><a href="../../week02/lesson04/">Lesson 2.4</a></td>
+</tr>
+<tr>
+<td><code>using</code> declarations vs <code>using namespace</code></td>
+<td>C++98</td>
+<td><a href="../../week02/lesson04/">Lesson 2.4</a></td>
+</tr>
+<tr>
+<td>Static initialization order fiasco</td>
+<td>—</td>
+<td><a href="../../week02/lesson04/">Lesson 2.4</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="basics-memory">Basics: memory<a class="headerlink" href="#basics-memory" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Standard</th>
+<th>Taught in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Built-in (C) arrays and array-to-pointer decay</td>
+<td>C++98</td>
+<td><a href="../../week03/lesson01/">Lesson 3.1</a></td>
+</tr>
+<tr>
+<td><code>std::array</code></td>
+<td>C++11</td>
+<td><a href="../../week03/lesson01/">Lesson 3.1</a></td>
+</tr>
+<tr>
+<td><code>std::size</code>, <code>std::ssize</code>, <code>std::data</code></td>
+<td>C++20</td>
+<td><a href="../../week03/lesson01/">Lesson 3.1</a></td>
+</tr>
+<tr>
+<td><code>std::span</code> (non-owning view)</td>
+<td>C++20</td>
+<td><a href="../../week03/lesson01/">Lesson 3.1</a></td>
+</tr>
+<tr>
+<td>Out-of-bounds access is UB; <code>.at()</code> bounds-checked</td>
+<td>C++98</td>
+<td><a href="../../week03/lesson01/">Lesson 3.1</a></td>
+</tr>
+<tr>
+<td>Pointers, <code>&amp;</code> address-of, <code>*</code> dereference, <code>-&gt;</code></td>
+<td>C++98</td>
+<td><a href="../../week03/lesson02/">Lesson 3.2</a></td>
+</tr>
+<tr>
+<td><code>nullptr</code> checks</td>
+<td>C++11</td>
+<td><a href="../../week03/lesson02/">Lesson 3.2</a></td>
+</tr>
+<tr>
+<td>Pointer arithmetic within an array</td>
+<td>C++98</td>
+<td><a href="../../week03/lesson02/">Lesson 3.2</a></td>
+</tr>
+<tr>
+<td><code>const T*</code> vs <code>T* const</code></td>
+<td>C++98</td>
+<td><a href="../../week03/lesson02/">Lesson 3.2</a></td>
+</tr>
+<tr>
+<td>Pointers vs references: when to use which</td>
+<td>—</td>
+<td><a href="../../week03/lesson02/">Lesson 3.2</a></td>
+</tr>
+<tr>
+<td><code>void*</code> and why to avoid it</td>
+<td>C++98</td>
+<td><a href="../../week03/lesson02/">Lesson 3.2</a></td>
+</tr>
+<tr>
+<td>Stack vs heap, <code>new</code>/<code>delete</code>, <code>new[]</code>/<code>delete[]</code></td>
+<td>C++98</td>
+<td><a href="../../week03/lesson03/">Lesson 3.3</a></td>
+</tr>
+<tr>
+<td>Memory leaks, double free, use-after-free</td>
+<td>—</td>
+<td><a href="../../week03/lesson03/">Lesson 3.3</a></td>
+</tr>
+<tr>
+<td>Undefined behaviour: what it means for the optimizer</td>
+<td>—</td>
+<td><a href="../../week03/lesson03/">Lesson 3.3</a></td>
+</tr>
+<tr>
+<td>AddressSanitizer / UBSan first look</td>
+<td>—</td>
+<td><a href="../../week03/lesson03/">Lesson 3.3</a></td>
+</tr>
+<tr>
+<td>Placement new (preview)</td>
+<td>C++98</td>
+<td><a href="../../week03/lesson03/">Lesson 3.3</a></td>
+</tr>
+<tr>
+<td>C strings (<code>const char*</code>, NUL terminator), <code>&lt;cstring&gt;</code> pitfalls</td>
+<td>C++98</td>
+<td><a href="../../week03/lesson04/">Lesson 3.4</a></td>
+</tr>
+<tr>
+<td><code>std::string</code> basics, SSO</td>
+<td>C++98</td>
+<td><a href="../../week03/lesson04/">Lesson 3.4</a></td>
+</tr>
+<tr>
+<td><code>std::string_view</code></td>
+<td>C++17</td>
+<td><a href="../../week03/lesson04/">Lesson 3.4</a></td>
+</tr>
+<tr>
+<td><code>starts_with</code> / <code>ends_with</code></td>
+<td>C++20</td>
+<td><a href="../../week03/lesson04/">Lesson 3.4</a></td>
+</tr>
+<tr>
+<td><code>contains</code></td>
+<td>C++23</td>
+<td><a href="../../week03/lesson04/">Lesson 3.4</a></td>
+</tr>
+<tr>
+<td><code>std::string</code> literals <code>"x"s</code> and <code>"x"sv</code></td>
+<td>C++14</td>
+<td><a href="../../week03/lesson04/">Lesson 3.4</a></td>
+</tr>
+<tr>
+<td>Dangling string_view pitfalls</td>
+<td>C++17</td>
+<td><a href="../../week03/lesson04/">Lesson 3.4</a></td>
+</tr>
+<tr>
+<td>Bitwise operators <code>&amp; | ^ ~ &lt;&lt; &gt;&gt;</code>, masks</td>
+<td>C++98</td>
+<td><a href="../../week03/lesson05/">Lesson 3.5</a></td>
+</tr>
+<tr>
+<td>Shift pitfalls (shifting by &gt;= width is UB; negative values)</td>
+<td>C++20</td>
+<td><a href="../../week03/lesson05/">Lesson 3.5</a></td>
+</tr>
+<tr>
+<td><code>std::byte</code></td>
+<td>C++17</td>
+<td><a href="../../week03/lesson05/">Lesson 3.5</a></td>
+</tr>
+<tr>
+<td><code>&lt;bit&gt;</code>: popcount, countl_zero, rotl, bit_ceil, has_single_bit</td>
+<td>C++20</td>
+<td><a href="../../week03/lesson05/">Lesson 3.5</a></td>
+</tr>
+<tr>
+<td><code>std::bit_cast</code></td>
+<td>C++20</td>
+<td><a href="../../week03/lesson05/">Lesson 3.5</a></td>
+</tr>
+<tr>
+<td><code>std::endian</code>, <code>std::byteswap</code></td>
+<td>C++23</td>
+<td><a href="../../week03/lesson05/">Lesson 3.5</a></td>
+</tr>
+<tr>
+<td>Two's complement guaranteed</td>
+<td>C++20</td>
+<td><a href="../../week03/lesson05/">Lesson 3.5</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="c26-preview-items">C++26 preview items<a class="headerlink" href="#c26-preview-items" title="Permanent link">&para;</a></h2>
+<p>C++26 was finalized in 2025–2026; compilers are still implementing it. These are covered in
+<a href="../week16/lesson05.md">Lesson 16.5: C++26 preview</a>:</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Static reflection (<code>^^T</code>, <code>std::meta</code>, splicers <code>[: :]</code>)</td>
+<td>C++26 (P2996) — preview, experimental compilers only</td>
+</tr>
+<tr>
+<td>Contracts (<code>pre</code>, <code>post</code>, <code>contract_assert</code>)</td>
+<td>C++26 (P2900) — preview</td>
+</tr>
+<tr>
+<td><code>std::execution</code> (senders/receivers)</td>
+<td>C++26 (P2300) — preview; usable today via NVIDIA stdexec</td>
+</tr>
+<tr>
+<td><code>std::inplace_vector</code></td>
+<td>C++26 (P0843) — preview</td>
+</tr>
+<tr>
+<td><code>#embed</code>, pack indexing, <code>= delete("reason")</code>, placeholder <code>_</code> variables</td>
+<td>C++26 — preview</td>
+</tr>
+<tr>
+<td>Hardened standard library, erroneous behaviour for uninitialized reads</td>
+<td>C++26 — preview</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../setup/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Setup">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Setup
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../week01/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Overview
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Text CC BY 4.0 · Code MIT
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.top", "navigation.footer", "navigation.indexes", "content.code.copy", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+    
+  </body>
+</html>
