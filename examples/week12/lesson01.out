@@ -1,0 +1,12 @@
+  Codec(44100) opened
+  using codec at 44100
+  a is null
+  sink took 44100
+  Codec(44100) closed
+after sink
+  sizeof(File)==sizeof(FILE*)? true
+  file closed
+  Codec(96000) opened
+  out_ptr filled codec at 96000
+  Codec(96000) closed
+buffer starts with x

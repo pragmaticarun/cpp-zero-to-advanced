@@ -1,0 +1,12 @@
+left    |   right|  mid   |
+0003.142 +42 0xff 0b101 1.234568e+04
+hello before world
+      -3.2 dB
+ranges: [1, 2, 3] ["a", "b"]
+take-007
+ff 10 16
+0.67
+48000/2/stereo
+parsed 1234, stopped at 'abc', ok=1
+to_chars(0.1+0.2) = 0.30000000000000004
+u8"cafe-acute" has 5 bytes for 4 characters

@@ -1,0 +1,8 @@
+same seed, same first value: true
+6000 rolls roughly uniform: true
+rate -> 48000; bits -> 24; ch -> 2; 
+pi=3.14159 hypot(3,4)=5 lerp(0,10,0.25)=2.5
+int max=2147483647 float min (smallest positive normal)=1.17549e-38 float lowest=-3.40282e+38
+0.1+0.2==0.3? false, within epsilon? true
+status=10010111 count=5 bit7=true
+[int main():45] hello from source_location

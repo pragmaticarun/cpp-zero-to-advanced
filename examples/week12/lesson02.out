@@ -1,0 +1,13 @@
+use_count=2
+after reset, view still alive: pcm
+  ~Buffer(pcm)
+--- album with weak back-edges
+  track's album has 1 track(s)
+  ~Album
+  ~Track
+--- weak_ptr expiry
+  expired? false
+  ~Buffer(temp)
+  expired? true
+session owners: 2
+aliased member still valid: 2

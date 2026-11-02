@@ -138,6 +138,17 @@ nav:
   - 11.5 Generators and lazy sequences with std::generator (C++23): week11/lesson05.md
   - Week quiz: week11/quiz.md
   - Programming assignment: week11/assignment.md
+- 'Week 12: The standard library III: memory, text, files, and time':
+  - Overview: week12/index.md
+  - 12.1 unique_ptr and custom deleters: week12/lesson01.md
+  - 12.2 shared_ptr, weak_ptr, and ownership graphs: week12/lesson02.md
+  - 12.3 Allocators and polymorphic memory resources (pmr): week12/lesson03.md
+  - '12.4 Text: std::format, std::print, iostreams, charconv, and Unicode': week12/lesson04.md
+  - 12.5 std::filesystem: week12/lesson05.md
+  - '12.6 std::chrono: durations, clocks, calendars, and time zones': week12/lesson06.md
+  - '12.7 A tour of the rest: random, regex, math, bits, limits, and more': week12/lesson07.md
+  - Week quiz: week12/quiz.md
+  - Programming assignment: week12/assignment.md
 - Capstones:
   - Capstone overview: capstone/index.md
   - 'A: Concurrent task library + CLI': capstone/threadpool.md

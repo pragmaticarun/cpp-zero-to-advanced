@@ -1,0 +1,8 @@
+filename="kick.json" stem="kick" ext=".json"
+as flac: "kick.flac"
+json: presets/drums/snare.json
+json: presets/kick.json
+content: {"name": "kick"} (16 bytes)
+remove missing file -> error? false
+renamed exists: true
+removed 6 entries

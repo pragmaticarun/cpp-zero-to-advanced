@@ -1,0 +1,5 @@
+std::vector<std::string>: heap allocations happened
+pmr in arena: 4 strings, last = "a fairly long string number 3"
+element uses the same arena? true
+global allocations during pmr block: 0
+null_memory_resource caught an overflow of the arena

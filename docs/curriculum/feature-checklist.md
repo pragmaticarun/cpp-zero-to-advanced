@@ -424,6 +424,77 @@ Use it as a checklist: tick off what you can explain to a colleague without note
 | `std::exchange`, `std::swap`, `std::as_const`, `std::to_underlying` | C++14/17/23 | [Lesson 11.4](../week11/lesson04.md) |
 | `std::integer_sequence` (recap) | C++14 | [Lesson 11.4](../week11/lesson04.md) |
 | `std::ref`/`std::cref`, `std::reference_wrapper` | C++11 | [Lesson 11.4](../week11/lesson04.md) |
+| `<random>`: engines, distributions, seeding | C++11 | [Lesson 12.7](../week12/lesson07.md) |
+| `<regex>` | C++11 | [Lesson 12.7](../week12/lesson07.md) |
+| `<cmath>` special functions, `<numbers>` constants | C++17/20 | [Lesson 12.7](../week12/lesson07.md) |
+| `std::numeric_limits` | C++98 | [Lesson 12.7](../week12/lesson07.md) |
+| `std::bitset` | C++98 | [Lesson 12.7](../week12/lesson07.md) |
+| `std::source_location` | C++20 | [Lesson 12.7](../week12/lesson07.md) |
+| `std::stacktrace` | C++23 | [Lesson 12.7](../week12/lesson07.md) |
+| `<locale>` basics | C++98 | [Lesson 12.7](../week12/lesson07.md) |
+| `std::hash` | C++11 | [Lesson 12.7](../week12/lesson07.md) |
+| `<cstdint>` fixed-width types (recap) | C++11 | [Lesson 12.7](../week12/lesson07.md) |
+
+## Memory management
+
+| Feature | Standard | Taught in |
+|---|---|---|
+| `std::unique_ptr`, `std::make_unique` | C++11/14 | [Lesson 12.1](../week12/lesson01.md) |
+| `unique_ptr<T[]>` | C++11 | [Lesson 12.1](../week12/lesson01.md) |
+| Custom deleters (function objects, lambdas, function pointers) | C++11 | [Lesson 12.1](../week12/lesson01.md) |
+| Ownership transfer via move; `release`, `reset`, `get` | C++11 | [Lesson 12.1](../week12/lesson01.md) |
+| `std::make_unique_for_overwrite` | C++20 | [Lesson 12.1](../week12/lesson01.md) |
+| `std::out_ptr`, `std::inout_ptr` | C++23 | [Lesson 12.1](../week12/lesson01.md) |
+| Smart pointer parameter guidelines | — | [Lesson 12.1](../week12/lesson01.md) |
+| `std::shared_ptr`, `std::make_shared` | C++11 | [Lesson 12.2](../week12/lesson02.md) |
+| Control block and reference counts | C++11 | [Lesson 12.2](../week12/lesson02.md) |
+| `std::weak_ptr`, `lock()`, breaking cycles | C++11 | [Lesson 12.2](../week12/lesson02.md) |
+| `std::enable_shared_from_this` | C++11 | [Lesson 12.2](../week12/lesson02.md) |
+| Aliasing constructor | C++11 | [Lesson 12.2](../week12/lesson02.md) |
+| `std::atomic<std::shared_ptr>` | C++20 | [Lesson 12.2](../week12/lesson02.md) |
+| `make_shared` for arrays | C++20 | [Lesson 12.2](../week12/lesson02.md) |
+| Allocator model (`std::allocator`, `allocator_traits`) | C++98/11 | [Lesson 12.3](../week12/lesson03.md) |
+| `std::pmr::memory_resource`, `polymorphic_allocator` | C++17 | [Lesson 12.3](../week12/lesson03.md) |
+| `monotonic_buffer_resource`, `unsynchronized_pool_resource`, `synchronized_pool_resource` | C++17 | [Lesson 12.3](../week12/lesson03.md) |
+| `std::pmr::vector`, `std::pmr::string` | C++17 | [Lesson 12.3](../week12/lesson03.md) |
+| Custom `operator new`/`delete` overloads | C++98 | [Lesson 12.3](../week12/lesson03.md) |
+| Aligned allocation (`align_val_t`) | C++17 | [Lesson 12.3](../week12/lesson03.md) |
+
+## Standard library: text & I/O
+
+| Feature | Standard | Taught in |
+|---|---|---|
+| `std::format`, format specifications | C++20 | [Lesson 12.4](../week12/lesson04.md) |
+| `std::print`, `std::println` | C++23 | [Lesson 12.4](../week12/lesson04.md) |
+| Custom `std::formatter` specializations | C++20 | [Lesson 12.4](../week12/lesson04.md) |
+| Formatting ranges | C++23 | [Lesson 12.4](../week12/lesson04.md) |
+| iostreams, manipulators, `std::stringstream` | C++98 | [Lesson 12.4](../week12/lesson04.md) |
+| `std::from_chars` / `std::to_chars` | C++17 | [Lesson 12.4](../week12/lesson04.md) |
+| `char8_t`, UTF-8 string literals | C++20 | [Lesson 12.4](../week12/lesson04.md) |
+| `std::format` compile-time format string checks | C++20 | [Lesson 12.4](../week12/lesson04.md) |
+
+## Standard library: files
+
+| Feature | Standard | Taught in |
+|---|---|---|
+| `std::filesystem::path` operations | C++17 | [Lesson 12.5](../week12/lesson05.md) |
+| `directory_iterator`, `recursive_directory_iterator` | C++17 | [Lesson 12.5](../week12/lesson05.md) |
+| `create_directories`, `copy`, `rename`, `remove_all` | C++17 | [Lesson 12.5](../week12/lesson05.md) |
+| `file_size`, `last_write_time`, `status`, `exists` | C++17 | [Lesson 12.5](../week12/lesson05.md) |
+| Error handling: `filesystem_error` vs `error_code` overloads | C++17 | [Lesson 12.5](../week12/lesson05.md) |
+| File I/O with `std::ifstream`/`ofstream`, binary mode | C++98 | [Lesson 12.5](../week12/lesson05.md) |
+
+## Standard library: time
+
+| Feature | Standard | Taught in |
+|---|---|---|
+| `duration`, `time_point`, `duration_cast` | C++11 | [Lesson 12.6](../week12/lesson06.md) |
+| Clocks: `steady_clock`, `system_clock`, `high_resolution_clock` | C++11 | [Lesson 12.6](../week12/lesson06.md) |
+| Duration literals (`ms`, `s`, `h`) | C++14 | [Lesson 12.6](../week12/lesson06.md) |
+| `floor`, `ceil`, `round` for durations | C++17 | [Lesson 12.6](../week12/lesson06.md) |
+| Calendar types: `year_month_day`, `weekday`, `sys_days` | C++20 | [Lesson 12.6](../week12/lesson06.md) |
+| Time zones: `zoned_time`, `tzdb` | C++20 | [Lesson 12.6](../week12/lesson06.md) |
+| Formatting chrono types with `std::format` | C++20 | [Lesson 12.6](../week12/lesson06.md) |
 
 ## C++26 preview items
 
