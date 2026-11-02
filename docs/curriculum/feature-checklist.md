@@ -379,6 +379,52 @@ Use it as a checklist: tick off what you can explain to a colleague without note
 | Writing a custom iterator | C++20 | [Lesson 10.6](../week10/lesson06.md) |
 | Sentinels | C++20 | [Lesson 10.6](../week10/lesson06.md) |
 
+## Standard library: algorithms
+
+| Feature | Standard | Taught in |
+|---|---|---|
+| Non-modifying algorithms: `find`, `find_if`, `count_if`, `all_of/any_of/none_of`, `mismatch`, `search` | C++98/11 | [Lesson 11.1](../week11/lesson01.md) |
+| Sorting: `sort`, `stable_sort`, `partial_sort`, `nth_element` | C++98 | [Lesson 11.1](../week11/lesson01.md) |
+| Binary search: `lower_bound`, `upper_bound`, `equal_range`, `binary_search` | C++98 | [Lesson 11.1](../week11/lesson01.md) |
+| `min/max/minmax/clamp`, `min_element/max_element` | C++98/11/17 | [Lesson 11.1](../week11/lesson01.md) |
+| Strict weak ordering requirement | C++98 | [Lesson 11.1](../week11/lesson01.md) |
+| Range algorithms `std::ranges::*` with projections | C++20 | [Lesson 11.1](../week11/lesson01.md) |
+| Modifying algorithms: `copy_if`, `transform`, `replace_if`, `fill`, `generate`, `rotate`, `reverse`, `unique`, `shuffle` | C++98/11 | [Lesson 11.2](../week11/lesson02.md) |
+| Set algorithms on sorted ranges: `set_union`, `set_intersection`, `includes`, `merge` | C++98 | [Lesson 11.2](../week11/lesson02.md) |
+| Heap algorithms: `make_heap`, `push_heap`, `pop_heap` | C++98 | [Lesson 11.2](../week11/lesson02.md) |
+| `<numeric>`: `accumulate`, `reduce`, `transform_reduce`, `inner_product`, `partial_sum`, `inclusive_scan`, `iota`, `gcd`, `lcm`, `midpoint` | C++98/17/20 | [Lesson 11.2](../week11/lesson02.md) |
+| `std::ranges::fold_left` | C++23 | [Lesson 11.2](../week11/lesson02.md) |
+| Output ranges and `back_inserter` | C++98 | [Lesson 11.2](../week11/lesson02.md) |
+
+## Standard library: ranges
+
+| Feature | Standard | Taught in |
+|---|---|---|
+| Ranges library, range concepts | C++20 | [Lesson 11.3](../week11/lesson03.md) |
+| Views: `filter`, `transform`, `take`, `drop`, `reverse`, `iota`, `split`, `join`, `keys/values/elements` | C++20 | [Lesson 11.3](../week11/lesson03.md) |
+| Pipe syntax `|` | C++20 | [Lesson 11.3](../week11/lesson03.md) |
+| Lazy evaluation | C++20 | [Lesson 11.3](../week11/lesson03.md) |
+| `std::ranges::to` | C++23 | [Lesson 11.3](../week11/lesson03.md) |
+| C++23 views: `zip`, `enumerate`, `chunk`, `slide`, `stride`, `cartesian_product`, `adjacent`, `join_with` | C++23 | [Lesson 11.3](../week11/lesson03.md) |
+| Dangling protection (`std::ranges::dangling`) | C++20 | [Lesson 11.3](../week11/lesson03.md) |
+| Borrowed ranges | C++20 | [Lesson 11.3](../week11/lesson03.md) |
+| `std::generator` | C++23 | [Lesson 11.5](../week11/lesson05.md) |
+| `co_yield` in generators | C++20 | [Lesson 11.5](../week11/lesson05.md) |
+| Generators as ranges (compose with views) | C++23 | [Lesson 11.5](../week11/lesson05.md) |
+| Recursive generators (`elements_of`) | C++23 | [Lesson 11.5](../week11/lesson05.md) |
+
+## Standard library: utilities
+
+| Feature | Standard | Taught in |
+|---|---|---|
+| `std::pair`, `std::tuple`, `std::tie`, `std::get`, `std::tuple_cat` | C++98/11 | [Lesson 11.4](../week11/lesson04.md) |
+| `std::apply`, `std::make_from_tuple` | C++17 | [Lesson 11.4](../week11/lesson04.md) |
+| Function objects: `std::plus<>`, `std::less<>`, `std::ranges::less`, `std::identity` | C++98/14/20 | [Lesson 11.4](../week11/lesson04.md) |
+| `std::not_fn` | C++17 | [Lesson 11.4](../week11/lesson04.md) |
+| `std::exchange`, `std::swap`, `std::as_const`, `std::to_underlying` | C++14/17/23 | [Lesson 11.4](../week11/lesson04.md) |
+| `std::integer_sequence` (recap) | C++14 | [Lesson 11.4](../week11/lesson04.md) |
+| `std::ref`/`std::cref`, `std::reference_wrapper` | C++11 | [Lesson 11.4](../week11/lesson04.md) |
+
 ## C++26 preview items
 
 C++26 was finalized in 2025–2026; compilers are still implementing it. These are covered in

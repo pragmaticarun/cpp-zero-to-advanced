@@ -1,0 +1,8 @@
+first clipped: t2
+longer than 60s: 4
+all under 2 min? true
+top 2 loudest: t5 t2
+median-ish duration: 62
+t4(30) t1(45) t3(62) t6(62) t2(75) t5(90) 
+takes of exactly 62s: 2, lower_bound(60) -> 62
+min 30 max 90 clamp(200) 90

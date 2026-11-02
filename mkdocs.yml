@@ -129,6 +129,15 @@ nav:
   - 10.6 Iterators and iterator categories: week10/lesson06.md
   - Week quiz: week10/quiz.md
   - Programming assignment: week10/assignment.md
+- 'Week 11: The standard library II: algorithms and ranges':
+  - Overview: week11/index.md
+  - '11.1 Algorithms I: searching, counting, sorting': week11/lesson01.md
+  - '11.2 Algorithms II: transforming, removing, and numeric': week11/lesson02.md
+  - 11.3 Ranges and views: week11/lesson03.md
+  - '11.4 Utilities: pair, tuple, apply, function objects, and friends': week11/lesson04.md
+  - 11.5 Generators and lazy sequences with std::generator (C++23): week11/lesson05.md
+  - Week quiz: week11/quiz.md
+  - Programming assignment: week11/assignment.md
 - Capstones:
   - Capstone overview: capstone/index.md
   - 'A: Concurrent task library + CLI': capstone/threadpool.md

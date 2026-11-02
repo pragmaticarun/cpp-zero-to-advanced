@@ -1,0 +1,8 @@
+VERSE CHORUS OUTRO 
+squares < 50: 7 values, last 49
+0:intro 1:verse 
+11 22 33 
+[6][15][7] <- sums of chunks of 3
+2 3 4 5 6 <- centers of sliding windows
+kick|snare|hat|
+house techno 130 124 
