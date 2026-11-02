@@ -168,6 +168,16 @@ nav:
   - '14.6 Coroutines II: awaitables and async tasks': week14/lesson06.md
   - Week quiz: week14/quiz.md
   - Programming assignment: week14/assignment.md
+- 'Week 15: Building, testing, and performance engineering':
+  - Overview: week15/index.md
+  - '15.1 Build systems: CMake, packages, and C++20 modules': week15/lesson01.md
+  - 15.2 Linking, the ODR, ABI, and extern "C": week15/lesson02.md
+  - 15.3 Testing, sanitizers, and static analysis: week15/lesson03.md
+  - 15.4 Debugging, profiling, and compiler optimization: week15/lesson04.md
+  - '15.5 Performance: caches, memory layout, and data-oriented design': week15/lesson05.md
+  - 15.6 Security hardening and the C++ Core Guidelines: week15/lesson06.md
+  - Week quiz: week15/quiz.md
+  - Programming assignment: week15/assignment.md
 - Capstones:
   - Capstone overview: capstone/index.md
   - 'A: Concurrent task library + CLI': capstone/threadpool.md

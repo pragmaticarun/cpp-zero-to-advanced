@@ -591,6 +591,79 @@ Use it as a checklist: tick off what you can explain to a colleague without note
 | Scheduling coroutines on an event loop | C++20 | [Lesson 14.6](../week14/lesson06.md) |
 | Coroutine libraries (cppcoro, libunifex, Asio, stdexec) | — | [Lesson 14.6](../week14/lesson06.md) |
 
+## Tooling: builds
+
+| Feature | Standard | Taught in |
+|---|---|---|
+| Translation units, headers, include guards, `#pragma once` | C++98 | [Lesson 15.1](../week15/lesson01.md) |
+| Modern CMake: targets, `target_link_libraries`, `target_compile_features` | — | [Lesson 15.1](../week15/lesson01.md) |
+| Package managers: vcpkg, Conan; `find_package`, `FetchContent` | — | [Lesson 15.1](../week15/lesson01.md) |
+| C++20 modules: `export module`, `import`, module partitions | C++20 | [Lesson 15.1](../week15/lesson01.md) |
+| `import std;` standard library module | C++23 | [Lesson 15.1](../week15/lesson01.md) |
+| Header units | C++20 | [Lesson 15.1](../week15/lesson01.md) |
+| `__has_include`, feature-test macros (`__cpp_lib_*`) | C++17/20 | [Lesson 15.1](../week15/lesson01.md) |
+
+## Tooling: linking & ABI
+
+| Feature | Standard | Taught in |
+|---|---|---|
+| Compilation vs linking; object files and symbols | — | [Lesson 15.2](../week15/lesson02.md) |
+| One Definition Rule (ODR) and its violations | C++98 | [Lesson 15.2](../week15/lesson02.md) |
+| `inline` functions and `inline` variables | C++98/17 | [Lesson 15.2](../week15/lesson02.md) |
+| Internal linkage: `static`, anonymous namespaces | C++98/11 | [Lesson 15.2](../week15/lesson02.md) |
+| Name mangling and `extern "C"` | C++98 | [Lesson 15.2](../week15/lesson02.md) |
+| Static vs shared libraries, symbol visibility | — | [Lesson 15.2](../week15/lesson02.md) |
+| ABI stability (`std::string` C++11 ABI change, pimpl) | — | [Lesson 15.2](../week15/lesson02.md) |
+
+## Tooling: quality
+
+| Feature | Standard | Taught in |
+|---|---|---|
+| Unit testing frameworks: GoogleTest, Catch2, doctest | — | [Lesson 15.3](../week15/lesson03.md) |
+| Test design: arrange–act–assert, edge cases, property tests | — | [Lesson 15.3](../week15/lesson03.md) |
+| Sanitizers: ASan, UBSan, TSan, MSan, LSan | — | [Lesson 15.3](../week15/lesson03.md) |
+| `static_assert` as compile-time tests | C++11 | [Lesson 15.3](../week15/lesson03.md) |
+| clang-tidy, cppcheck, compiler warnings as errors | — | [Lesson 15.3](../week15/lesson03.md) |
+| clang-format | — | [Lesson 15.3](../week15/lesson03.md) |
+| Fuzzing with libFuzzer | — | [Lesson 15.3](../week15/lesson03.md) |
+| Code coverage (gcov/llvm-cov) | — | [Lesson 15.3](../week15/lesson03.md) |
+
+## Tooling: performance
+
+| Feature | Standard | Taught in |
+|---|---|---|
+| Debuggers: gdb/lldb, breakpoints, watchpoints, core dumps | — | [Lesson 15.4](../week15/lesson04.md) |
+| Optimization levels `-O0`…`-O3`, `-Os`, `-march=native` | — | [Lesson 15.4](../week15/lesson04.md) |
+| Link-time optimization (LTO), profile-guided optimization (PGO) | — | [Lesson 15.4](../week15/lesson04.md) |
+| Profilers: perf, VTune, Instruments, Tracy | — | [Lesson 15.4](../week15/lesson04.md) |
+| Benchmarking pitfalls; Google Benchmark | — | [Lesson 15.4](../week15/lesson04.md) |
+| Auto-vectorization and SIMD intrinsics; `std::simd` (C++26) | — | [Lesson 15.4](../week15/lesson04.md) |
+| `[[likely]]`, `[[unlikely]]`, `[[assume]]` | C++20/23 | [Lesson 15.4](../week15/lesson04.md) |
+
+## Performance
+
+| Feature | Standard | Taught in |
+|---|---|---|
+| Memory hierarchy and cache lines | — | [Lesson 15.5](../week15/lesson05.md) |
+| Contiguous data and prefetching; `vector` vs `list` | — | [Lesson 15.5](../week15/lesson05.md) |
+| Array of structs (AoS) vs struct of arrays (SoA) | — | [Lesson 15.5](../week15/lesson05.md) |
+| Struct padding, `alignof`, member ordering | C++11 | [Lesson 15.5](../week15/lesson05.md) |
+| Branch prediction and branchless code | — | [Lesson 15.5](../week15/lesson05.md) |
+| Avoiding allocations: `reserve`, small-buffer optimization, arenas | — | [Lesson 15.5](../week15/lesson05.md) |
+| Move semantics and copy elision in hot paths | C++11/17 | [Lesson 15.5](../week15/lesson05.md) |
+
+## Safety & security
+
+| Feature | Standard | Taught in |
+|---|---|---|
+| Memory-safety bug classes (buffer overflow, UAF, type confusion) | — | [Lesson 15.6](../week15/lesson06.md) |
+| Hardened standard library modes (`_GLIBCXX_ASSERTIONS`, libc++ hardening) | — | [Lesson 15.6](../week15/lesson06.md) |
+| Compiler hardening: `-D_FORTIFY_SOURCE`, `-fstack-protector-strong`, `-ftrivial-auto-var-init` | — | [Lesson 15.6](../week15/lesson06.md) |
+| Bounds-checked access: `.at()`, `std::span` | C++11/20 | [Lesson 15.6](../week15/lesson06.md) |
+| C++ Core Guidelines and the GSL (`gsl::not_null`, `gsl::narrow`) | — | [Lesson 15.6](../week15/lesson06.md) |
+| Safe integer handling: `std::in_range`, `std::cmp_less` | C++20 | [Lesson 15.6](../week15/lesson06.md) |
+| Erroneous behaviour for uninitialized reads | C++26 | [Lesson 15.6](../week15/lesson06.md) |
+
 ## C++26 preview items
 
 C++26 was finalized in 2025–2026; compilers are still implementing it. These are covered in

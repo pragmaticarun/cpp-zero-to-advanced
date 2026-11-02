@@ -1,0 +1,6 @@
+average 0.5
+at() caught out-of-bounds
+-1 < 3u with raw compare: false, with cmp_less: true
+narrowing would lose data
+narrow 200 -> 200
+initialized = 0

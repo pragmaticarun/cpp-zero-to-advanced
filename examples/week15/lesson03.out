@@ -1,0 +1,5 @@
+[ RUN ] empty ring pops nothing
+[ RUN ] full ring rejects push
+[ RUN ] wrap-around keeps order
+[ RUN ] property: FIFO for random sequences
+4 tests, 0 failures

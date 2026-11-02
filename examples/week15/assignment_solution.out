@@ -1,0 +1,7 @@
+valid: 2 field(s) rate=48000 ch=2
+empty input: 0 field(s)
+truncated key: error truncated
+value length past end: error truncated
+zero-length key: error empty_key
+oversized key: error too_long
+2000 random inputs parsed without crashing

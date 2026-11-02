@@ -1,0 +1,3 @@
+std::expected not available in this mode
+concepts: yes
+__cplusplus = >= C++20
