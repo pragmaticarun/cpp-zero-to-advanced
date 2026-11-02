@@ -65,6 +65,15 @@ nav:
   - '3.5 Bits and bytes: bitwise operators, std::byte, and <bit>': week03/lesson05.md
   - Week quiz: week03/quiz.md
   - Programming assignment: week03/assignment.md
+- 'Week 4: Classes and RAII':
+  - Overview: week04/index.md
+  - 4.1 Classes, encapsulation, and const member functions: week04/lesson01.md
+  - 4.2 Constructors, destructors, and every way to initialize: week04/lesson02.md
+  - '4.3 RAII: tying resources to object lifetime': week04/lesson03.md
+  - 4.4 explicit, conversions, static members, friends, nested classes: week04/lesson04.md
+  - 4.5 Operator overloading and the spaceship operator <=>: week04/lesson05.md
+  - Week quiz: week04/quiz.md
+  - Programming assignment: week04/assignment.md
 - Capstones:
   - Capstone overview: capstone/index.md
   - 'A: Concurrent task library + CLI': capstone/threadpool.md

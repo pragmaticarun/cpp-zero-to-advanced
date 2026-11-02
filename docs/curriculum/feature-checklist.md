@@ -120,6 +120,40 @@ Use it as a checklist: tick off what you can explain to a colleague without note
 | `std::endian`, `std::byteswap` | C++23 | [Lesson 3.5](../week03/lesson05.md) |
 | Two's complement guaranteed | C++20 | [Lesson 3.5](../week03/lesson05.md) |
 
+## OOP: classes
+
+| Feature | Standard | Taught in |
+|---|---|---|
+| `class` vs `struct`, `public`/`private`/`protected` | C++98 | [Lesson 4.1](../week04/lesson01.md) |
+| Member functions, `this` | C++98 | [Lesson 4.1](../week04/lesson01.md) |
+| `const` member functions, `mutable` | C++98 | [Lesson 4.1](../week04/lesson01.md) |
+| Class invariants | — | [Lesson 4.1](../week04/lesson01.md) |
+| Ref-qualified member functions (`&`, `&&`) | C++11 | [Lesson 4.1](../week04/lesson01.md) |
+| Constructors, member initializer lists | C++98 | [Lesson 4.2](../week04/lesson02.md) |
+| Default member initializers | C++11 | [Lesson 4.2](../week04/lesson02.md) |
+| Delegating constructors | C++11 | [Lesson 4.2](../week04/lesson02.md) |
+| `= default`, `= delete` | C++11 | [Lesson 4.2](../week04/lesson02.md) |
+| Member initialization order = declaration order | C++98 | [Lesson 4.2](../week04/lesson02.md) |
+| List-initialization and the `std::initializer_list` constructor pitfall | C++11 | [Lesson 4.2](../week04/lesson02.md) |
+| Value-, default-, zero-initialization; most vexing parse | C++11 | [Lesson 4.2](../week04/lesson02.md) |
+| Destructors | C++98 | [Lesson 4.2](../week04/lesson02.md) |
+| RAII (Resource Acquisition Is Initialization) | C++98 | [Lesson 4.3](../week04/lesson03.md) |
+| Destructors run during stack unwinding | C++98 | [Lesson 4.3](../week04/lesson03.md) |
+| Scope guards | — | [Lesson 4.3](../week04/lesson03.md) |
+| Wrapping C handles (FILE*, fds) in RAII types | — | [Lesson 4.3](../week04/lesson03.md) |
+| Non-copyable resource types | C++11 | [Lesson 4.3](../week04/lesson03.md) |
+| `explicit` constructors and `explicit(bool)` | C++20 | [Lesson 4.4](../week04/lesson04.md) |
+| Conversion operators, `explicit operator bool` | C++11 | [Lesson 4.4](../week04/lesson04.md) |
+| `static` data members and functions, `inline static` | C++17 | [Lesson 4.4](../week04/lesson04.md) |
+| `friend` functions and classes | C++98 | [Lesson 4.4](../week04/lesson04.md) |
+| Nested classes and local classes | C++98 | [Lesson 4.4](../week04/lesson04.md) |
+| Operator overloading: member vs non-member, canonical forms | C++98 | [Lesson 4.5](../week04/lesson05.md) |
+| Three-way comparison `operator<=>` | C++20 | [Lesson 4.5](../week04/lesson05.md) |
+| Defaulted comparisons `= default` | C++20 | [Lesson 4.5](../week04/lesson05.md) |
+| `std::strong_ordering`, `weak_ordering`, `partial_ordering` | C++20 | [Lesson 4.5](../week04/lesson05.md) |
+| Rewritten comparison candidates (`a != b` from `==`) | C++20 | [Lesson 4.5](../week04/lesson05.md) |
+| Overloading `[]` (multi-dimensional subscript in C++23), `()` | C++23 | [Lesson 4.5](../week04/lesson05.md) |
+
 ## C++26 preview items
 
 C++26 was finalized in 2025–2026; compilers are still implementing it. These are covered in

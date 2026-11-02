@@ -1,0 +1,6 @@
+open mic @16000 ch=2
+open speaker @48000 ch=2
+paren size=3 brace size=2
+0 0,0 1,2
+close speaker
+close mic

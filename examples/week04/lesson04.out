@@ -1,0 +1,3 @@
+wait 20 ms
+Codec(opus) valid=1, none valid=no, instances=2
+frames=3

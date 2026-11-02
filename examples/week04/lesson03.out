@@ -1,0 +1,10 @@
+normal run:
+  opened /tmp/raii_demo.txt
+  done
+  guard: cleanup step
+  closed
+failing run:
+  opened /tmp/raii_demo.txt
+  guard: cleanup step
+  closed
+  caught: encoding failed
