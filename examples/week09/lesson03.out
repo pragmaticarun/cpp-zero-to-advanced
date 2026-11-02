@@ -1,0 +1,12 @@
+120 -> 240 half-beats/min
+12x -> invalid
+999 -> invalid
+value_or: -1
+bad_optional_access
+null
+number 3.500000
+string "hi"
+array of 3
+true 1
+not a string
+bad_variant_access

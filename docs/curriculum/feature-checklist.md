@@ -297,6 +297,43 @@ Use it as a checklist: tick off what you can explain to a colleague without note
 | Member function pointers | C++98 | [Lesson 8.4](../week08/lesson04.md) |
 | Type erasure (concept/model pattern) | — | [Lesson 8.4](../week08/lesson04.md) |
 
+## Error handling
+
+| Feature | Standard | Taught in |
+|---|---|---|
+| `throw`, `try`, `catch`, rethrow `throw;` | C++98 | [Lesson 9.1](../week09/lesson01.md) |
+| Standard exception hierarchy (`<stdexcept>`) | C++98 | [Lesson 9.1](../week09/lesson01.md) |
+| Stack unwinding and RAII | C++98 | [Lesson 9.1](../week09/lesson01.md) |
+| `std::exception_ptr`, `std::current_exception`, `std::rethrow_exception` | C++11 | [Lesson 9.1](../week09/lesson01.md) |
+| `std::nested_exception`, `std::throw_with_nested` | C++11 | [Lesson 9.1](../week09/lesson01.md) |
+| Function-try-blocks | C++98 | [Lesson 9.1](../week09/lesson01.md) |
+| `-fno-exceptions` builds | — | [Lesson 9.1](../week09/lesson01.md) |
+| Exception safety guarantees (nothrow, strong, basic) | — | [Lesson 9.2](../week09/lesson02.md) |
+| `noexcept` specifier and operator | C++11 | [Lesson 9.2](../week09/lesson02.md) |
+| Conditional `noexcept(expr)` | C++11 | [Lesson 9.2](../week09/lesson02.md) |
+| Destructors are implicitly `noexcept` | C++11 | [Lesson 9.2](../week09/lesson02.md) |
+| Copy-and-swap for the strong guarantee | — | [Lesson 9.2](../week09/lesson02.md) |
+| `std::move_if_noexcept` | C++11 | [Lesson 9.2](../week09/lesson02.md) |
+| `std::optional` | C++17 | [Lesson 9.3](../week09/lesson03.md) |
+| Monadic `optional`: `and_then`, `transform`, `or_else` | C++23 | [Lesson 9.3](../week09/lesson03.md) |
+| `std::variant`, `std::visit`, `std::holds_alternative`, `std::get_if` | C++17 | [Lesson 9.3](../week09/lesson03.md) |
+| Overload pattern for visitors | C++17 | [Lesson 9.3](../week09/lesson03.md) |
+| `std::monostate` | C++17 | [Lesson 9.3](../week09/lesson03.md) |
+| `valueless_by_exception` | C++17 | [Lesson 9.3](../week09/lesson03.md) |
+| `std::expected<T, E>`, `std::unexpected` | C++23 | [Lesson 9.4](../week09/lesson04.md) |
+| Monadic `expected`: `and_then`, `transform`, `or_else`, `transform_error` | C++23 | [Lesson 9.4](../week09/lesson04.md) |
+| `std::error_code`, `std::error_condition`, `std::system_error` | C++11 | [Lesson 9.4](../week09/lesson04.md) |
+| `std::errc` | C++11 | [Lesson 9.4](../week09/lesson04.md) |
+| `[[nodiscard]]` on result types | C++17 | [Lesson 9.4](../week09/lesson04.md) |
+| Choosing exceptions vs. expected vs. optional vs. terminate | — | [Lesson 9.4](../week09/lesson04.md) |
+| `assert` and `NDEBUG` | C++98 | [Lesson 9.5](../week09/lesson05.md) |
+| `static_assert` (with and without message) | C++11/17 | [Lesson 9.5](../week09/lesson05.md) |
+| Contracts: `pre`, `post`, `contract_assert` | C++26 (preview) | [Lesson 9.5](../week09/lesson05.md) |
+| Undefined behaviour catalogue | — | [Lesson 9.5](../week09/lesson05.md) |
+| Unspecified vs implementation-defined vs undefined | — | [Lesson 9.5](../week09/lesson05.md) |
+| Erroneous behaviour for uninitialized reads | C++26 (preview) | [Lesson 9.5](../week09/lesson05.md) |
+| `std::unreachable` | C++23 | [Lesson 9.5](../week09/lesson05.md) |
+
 ## C++26 preview items
 
 C++26 was finalized in 2025–2026; compilers are still implementing it. These are covered in

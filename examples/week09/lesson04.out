@@ -1,0 +1,6 @@
+ok: 2ch @ 48000 Hz
+error: too short
+error: bad magic
+error: bad channel count
+file_size failed? true (no_such_file: true)
+filesystem_error code matches: true

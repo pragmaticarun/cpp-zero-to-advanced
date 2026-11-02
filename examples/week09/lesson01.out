@@ -1,0 +1,8 @@
+  ~Guard(parse_duration)
+  ~Guard(load_playlist)
+caught:
+- while loading playlist.m3u
+  - trailing junk in '12x'
+  ~Guard(parse_duration)
+invalid_argument from stoi
+transported: index 9

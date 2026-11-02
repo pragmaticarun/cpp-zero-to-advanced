@@ -110,6 +110,15 @@ nav:
   - 8.5 CRTP, deducing this, and a taste of metaprogramming: week08/lesson05.md
   - Week quiz: week08/quiz.md
   - Programming assignment: week08/assignment.md
+- 'Week 9: Error handling and undefined behaviour':
+  - Overview: week09/index.md
+  - '9.1 Exceptions: throw, try, catch, and stack unwinding': week09/lesson01.md
+  - 9.2 Exception safety guarantees and noexcept: week09/lesson02.md
+  - 9.3 std::optional and std::variant: week09/lesson03.md
+  - 9.4 std::expected, error codes, and choosing a strategy: week09/lesson04.md
+  - 9.5 Assertions, contracts preview, and the undefined behaviour catalogue: week09/lesson05.md
+  - Week quiz: week09/quiz.md
+  - Programming assignment: week09/assignment.md
 - Capstones:
   - Capstone overview: capstone/index.md
   - 'A: Concurrent task library + CLI': capstone/threadpool.md

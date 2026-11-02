@@ -1,0 +1,4 @@
+right check: true
+checked_add(INT_MAX, 1) = 0
+channels(stereo) = 2
+average = 6

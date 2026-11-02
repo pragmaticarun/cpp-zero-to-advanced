@@ -1,0 +1,4 @@
+ok: 48000 Hz, 2 ch, device 'hw:0'
+line 1: not a number: '48k'
+line 2: unknown key 'chanels'
+line 1: sample_rate and channels are required

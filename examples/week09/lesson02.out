@@ -1,0 +1,6 @@
+add_bad threw: empty title
+consistent after add_bad? false
+consistent after add_good? true
+consistent after failed replace_all? true
+noexcept(Thrower move)=false noexcept(Safe move)=true
+noexcept(p.consistent())=false

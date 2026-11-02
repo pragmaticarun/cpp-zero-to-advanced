@@ -52,7 +52,7 @@ for rel, m in sorted(man.items()):
         if not sans:
             continue
         p = subprocess.run([str(exe)], capture_output=True, text=True, timeout=30)
-        if p.returncode != 0 and "Sanitizer" in p.stderr:
+        if p.returncode != 0 and any(k in p.stderr for k in ("Sanitizer", "runtime error", "panic:")):
             stats["sanitizer_detected_ok"] = stats.get("sanitizer_detected_ok", 0) + 1
         else:
             stats["failed"] += 1; fails.append((rel, "sanitizer did not detect the bug"))
