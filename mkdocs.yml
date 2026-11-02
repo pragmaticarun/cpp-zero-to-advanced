@@ -158,6 +158,16 @@ nav:
   - 13.5 Latches, barriers, semaphores, and thread_local: week13/lesson05.md
   - Week quiz: week13/quiz.md
   - Programming assignment: week13/assignment.md
+- 'Week 14: Concurrency II: atomics, lock-free code, thread pools, and coroutines':
+  - Overview: week14/index.md
+  - 14.1 Atomics and the memory model: week14/lesson01.md
+  - 14.2 A lock-free single-producer/single-consumer ring buffer: week14/lesson02.md
+  - 14.3 Building a thread pool: week14/lesson03.md
+  - 14.4 Parallel algorithms and a preview of std::execution: week14/lesson04.md
+  - '14.5 Coroutines I: the machinery, and writing a generator': week14/lesson05.md
+  - '14.6 Coroutines II: awaitables and async tasks': week14/lesson06.md
+  - Week quiz: week14/quiz.md
+  - Programming assignment: week14/assignment.md
 - Capstones:
   - Capstone overview: capstone/index.md
   - 'A: Concurrent task library + CLI': capstone/threadpool.md

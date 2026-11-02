@@ -530,6 +530,67 @@ Use it as a checklist: tick off what you can explain to a colleague without note
 | `thread_local` storage duration | C++11 | [Lesson 13.5](../week13/lesson05.md) |
 | Choosing a synchronization primitive | — | [Lesson 13.5](../week13/lesson05.md) |
 
+## Concurrency: atomics
+
+| Feature | Standard | Taught in |
+|---|---|---|
+| `std::atomic<T>`, `load`, `store`, `exchange`, `fetch_add` | C++11 | [Lesson 14.1](../week14/lesson01.md) |
+| `compare_exchange_weak` / `_strong` | C++11 | [Lesson 14.1](../week14/lesson01.md) |
+| Memory orders: `seq_cst`, `acquire`, `release`, `acq_rel`, `relaxed` | C++11 | [Lesson 14.1](../week14/lesson01.md) |
+| Happens-before and synchronizes-with | C++11 | [Lesson 14.1](../week14/lesson01.md) |
+| `std::atomic_ref` | C++20 | [Lesson 14.1](../week14/lesson01.md) |
+| `atomic::wait` / `notify_one` / `notify_all` | C++20 | [Lesson 14.1](../week14/lesson01.md) |
+| `std::atomic_flag`, `is_lock_free`, `is_always_lock_free` | C++11/17 | [Lesson 14.1](../week14/lesson01.md) |
+| `std::atomic<std::shared_ptr<T>>`, `atomic<float>` arithmetic | C++20 | [Lesson 14.1](../week14/lesson01.md) |
+| `volatile` is not for threads | — | [Lesson 14.1](../week14/lesson01.md) |
+
+## Concurrency: lock-free
+
+| Feature | Standard | Taught in |
+|---|---|---|
+| Lock-free vs wait-free vs obstruction-free | — | [Lesson 14.2](../week14/lesson02.md) |
+| SPSC ring buffer with acquire/release indices | C++11 | [Lesson 14.2](../week14/lesson02.md) |
+| `std::hardware_destructive_interference_size` and false sharing | C++17 | [Lesson 14.2](../week14/lesson02.md) |
+| `alignas` for cache-line separation | C++11 | [Lesson 14.2](../week14/lesson02.md) |
+| The ABA problem (concept) | — | [Lesson 14.2](../week14/lesson02.md) |
+
+## Concurrency: patterns
+
+| Feature | Standard | Taught in |
+|---|---|---|
+| Thread pool design: work queue, workers, shutdown | — | [Lesson 14.3](../week14/lesson03.md) |
+| Returning results with `std::packaged_task` + `std::future` | C++11 | [Lesson 14.3](../week14/lesson03.md) |
+| Type-erased tasks (`std::function` / move-only wrappers) | C++11/23 | [Lesson 14.3](../week14/lesson03.md) |
+| Graceful shutdown and exception safety | — | [Lesson 14.3](../week14/lesson03.md) |
+| Work stealing (concept) | — | [Lesson 14.3](../week14/lesson03.md) |
+
+## Concurrency: parallel algorithms
+
+| Feature | Standard | Taught in |
+|---|---|---|
+| Execution policies: `seq`, `par`, `par_unseq`, `unseq` | C++17/20 | [Lesson 14.4](../week14/lesson04.md) |
+| `std::reduce`, `std::transform_reduce` with policies | C++17 | [Lesson 14.4](../week14/lesson04.md) |
+| Requirements: no data races, no locks in `par_unseq` | C++17 | [Lesson 14.4](../week14/lesson04.md) |
+| Implementation notes (TBB for libstdc++) | — | [Lesson 14.4](../week14/lesson04.md) |
+| `std::execution` senders/receivers (preview) | C++26 | [Lesson 14.4](../week14/lesson04.md) |
+
+## Coroutines
+
+| Feature | Standard | Taught in |
+|---|---|---|
+| `co_yield`, `co_return`, `co_await` | C++20 | [Lesson 14.5](../week14/lesson05.md) |
+| Coroutine frame, `promise_type` | C++20 | [Lesson 14.5](../week14/lesson05.md) |
+| `std::coroutine_handle` | C++20 | [Lesson 14.5](../week14/lesson05.md) |
+| `initial_suspend` / `final_suspend` | C++20 | [Lesson 14.5](../week14/lesson05.md) |
+| `std::suspend_always` / `suspend_never` | C++20 | [Lesson 14.5](../week14/lesson05.md) |
+| Writing a generator by hand | C++20 | [Lesson 14.5](../week14/lesson05.md) |
+| `std::generator` (recap) | C++23 | [Lesson 14.5](../week14/lesson05.md) |
+| Awaitable protocol: `await_ready`, `await_suspend`, `await_resume` | C++20 | [Lesson 14.6](../week14/lesson06.md) |
+| A lazy `Task<T>` type with continuations | C++20 | [Lesson 14.6](../week14/lesson06.md) |
+| Symmetric transfer (returning a handle from `await_suspend`) | C++20 | [Lesson 14.6](../week14/lesson06.md) |
+| Scheduling coroutines on an event loop | C++20 | [Lesson 14.6](../week14/lesson06.md) |
+| Coroutine libraries (cppcoro, libunifex, Asio, stdexec) | — | [Lesson 14.6](../week14/lesson06.md) |
+
 ## C++26 preview items
 
 C++26 was finalized in 2025–2026; compilers are still implementing it. These are covered in

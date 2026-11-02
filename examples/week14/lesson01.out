@@ -1,0 +1,6 @@
+relaxed counter: 400000
+consumer sees data = 42
+CAS max: 3999
+woken with state 1
+atomic_ref on array element: 2000
+atomic<long> always lock-free: true

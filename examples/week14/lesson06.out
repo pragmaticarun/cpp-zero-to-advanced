@@ -1,0 +1,11 @@
+[t=0] fetch A/meta started
+[t=0] fetch B/meta started
+[t=2] fetch B/meta done
+[t=2] fetch B/body started
+[t=3] fetch A/meta done
+[t=3] fetch A/body started
+[t=4] fetch B/body done
+[t=4] request B got B/meta-data + B/body-data
+[t=6] fetch A/body done
+[t=6] request A got A/meta-data + A/body-data
+both done: true
