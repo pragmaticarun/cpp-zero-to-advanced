@@ -1,0 +1,22 @@
+name: examples
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  gcc:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check examples with GCC 14 (sanitizers enabled where requested)
+        env:
+          CXX: g++-14
+        run: scripts/check_examples.sh
+  clang:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check examples with Clang (via ziglang, libc++)
+        run: |
+          pip install ziglang
+          CXX="python3 -m ziglang c++" scripts/check_examples.sh

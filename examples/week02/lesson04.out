@@ -1,0 +1,12 @@
+  construct global
+main starts
+  construct outer
+  construct inner
+  construct static-local
+  calls=1
+  destroy   inner
+  calls=2
+main ends
+  destroy   outer
+  destroy   static-local
+  destroy   global

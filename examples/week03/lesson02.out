@@ -1,0 +1,6 @@
+level=7
+*(first+2)=30 first[3]=40 distance=4
+10 20 30 40 50 
+10 99
+1280x720
+no frame

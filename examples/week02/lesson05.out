@@ -1,0 +1,3 @@
+open Opus @48000Hz x2 low-latency
+open AAC @48000Hz x2
+ok=1 underlying(flac)=2 sizeof(WithTag)=4

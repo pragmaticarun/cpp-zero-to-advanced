@@ -1,0 +1,34 @@
+site_name: "C++ from Zero to Advanced"
+site_description: "A friendly, intuition-first C++ course, from your first program to lock-free queues and coroutines."
+site_url: https://pragmaticarun.github.io/cpp-zero-to-advanced/
+repo_url: https://github.com/pragmaticarun/cpp-zero-to-advanced
+repo_name: cpp-zero-to-advanced
+edit_uri: edit/main/
+copyright: "Text CC BY 4.0 · Code MIT"
+theme:
+  name: material
+  features: [navigation.sections, navigation.top, navigation.footer, navigation.indexes, content.code.copy, search.suggest, toc.follow]
+  palette:
+    - scheme: default
+      primary: indigo
+      toggle: {icon: material/brightness-7, name: Dark mode}
+    - scheme: slate
+      primary: indigo
+      toggle: {icon: material/brightness-4, name: Light mode}
+extra_css: [assets/extra.css]
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc: {permalink: true}
+  - pymdownx.details
+  - pymdownx.highlight: {anchor_linenums: true}
+  - pymdownx.inlinehilite
+  - pymdownx.snippets: {base_path: ["."], check_paths: true}
+  - pymdownx.tabbed: {alternate_style: true}
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format

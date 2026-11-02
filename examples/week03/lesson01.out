@@ -1,0 +1,5 @@
+sizeof(c_array)=16 std::size(c_array)=4
+2.5 2.5 3.5
+1 2 30 40 5 6 
+true
+at(10) threw out_of_range

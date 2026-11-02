@@ -1,0 +1,7 @@
+sizeof(int)=4 sizeof(long long)=8 sizeof(double)=8
+int range: -2147483648 .. 2147483647
+uint16_t max: 65535
+0b1111'1111 = 255, 0xFF = 255
+0.1 + 0.2 == 0.3 ? false
+0.1 + 0.2 = 0.30000000000000004
+uint8_t printed directly: A, as int: 65

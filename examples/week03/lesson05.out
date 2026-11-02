@@ -1,0 +1,6 @@
+bits=01100111 forbidden=0 ref_idc=3 type=7
+flags=00101000 popcount=2
+bit_ceil(600)=1024 has_single_bit(512)=1 countr_zero(40)=3
+bits of 1.0f = 0x3f800000 byteswap(0x11223344)=0x44332211
+little endian? 1
+std::byte as int: 161

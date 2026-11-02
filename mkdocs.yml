@@ -1,0 +1,73 @@
+site_name: "C++ from Zero to Advanced"
+site_description: "A friendly, intuition-first C++ course, from your first program to lock-free queues and coroutines."
+site_url: https://pragmaticarun.github.io/cpp-zero-to-advanced/
+repo_url: https://github.com/pragmaticarun/cpp-zero-to-advanced
+repo_name: cpp-zero-to-advanced
+edit_uri: edit/main/
+copyright: "Text CC BY 4.0 · Code MIT"
+theme:
+  name: material
+  features: [navigation.sections, navigation.top, navigation.footer, navigation.indexes, content.code.copy, search.suggest, toc.follow]
+  palette:
+    - scheme: default
+      primary: indigo
+      toggle: {icon: material/brightness-7, name: Dark mode}
+    - scheme: slate
+      primary: indigo
+      toggle: {icon: material/brightness-4, name: Light mode}
+extra_css: [assets/extra.css]
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc: {permalink: true}
+  - pymdownx.details
+  - pymdownx.highlight: {anchor_linenums: true}
+  - pymdownx.inlinehilite
+  - pymdownx.snippets: {base_path: ["."], check_paths: true}
+  - pymdownx.tabbed: {alternate_style: true}
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+nav:
+- Home: index.md
+- How to take this course: how-to-take.md
+- Setup: setup.md
+- Feature checklist: curriculum/feature-checklist.md
+- 'Week 1: Getting started: toolchain, compilation, types':
+  - Overview: week01/index.md
+  - '1.1 Hello, toolchain: compilers, CMake and Compiler Explorer': week01/lesson01.md
+  - '1.2 The compilation model: preprocessor, translation units, linking, ODR': week01/lesson02.md
+  - 1.3 Fundamental types, literals, and fixed-width integers: week01/lesson03.md
+  - '1.4 Variables and initialization: auto, const, constexpr': week01/lesson04.md
+  - 1.5 Operators, integer promotion and narrowing: week01/lesson05.md
+  - Week quiz: week01/quiz.md
+  - Programming assignment: week01/assignment.md
+- 'Week 2: Control flow, functions, references, scope':
+  - Overview: week02/index.md
+  - '2.1 Control flow: if, switch, loops, and range-for': week02/lesson01.md
+  - 2.2 Functions, overloading and default arguments: week02/lesson02.md
+  - 2.3 References, const, and how to pass parameters: week02/lesson03.md
+  - 2.4 Scope, lifetime, storage duration and namespaces: week02/lesson04.md
+  - 2.5 Enums, structs and attributes: week02/lesson05.md
+  - Week quiz: week02/quiz.md
+  - Programming assignment: week02/assignment.md
+- 'Week 3: Memory: arrays, pointers, strings, bits':
+  - Overview: week03/index.md
+  - '3.1 Arrays: C arrays, std::array, and a first look at std::span': week03/lesson01.md
+  - '3.2 Pointers: addresses, arithmetic, and const': week03/lesson02.md
+  - 3.3 Dynamic memory and a first map of undefined behaviour: week03/lesson03.md
+  - '3.4 Strings: C strings, std::string, and std::string_view': week03/lesson04.md
+  - '3.5 Bits and bytes: bitwise operators, std::byte, and <bit>': week03/lesson05.md
+  - Week quiz: week03/quiz.md
+  - Programming assignment: week03/assignment.md
+- Capstones:
+  - Capstone overview: capstone/index.md
+  - 'A: Concurrent task library + CLI': capstone/threadpool.md
+  - 'B: Embedded ring buffer': capstone/ringbuffer.md
+- Sources & further reading: sources.md
+- License: license.md
