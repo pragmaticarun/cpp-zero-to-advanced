@@ -35,9 +35,12 @@ def main():
             slug = f"lesson{i:02d}"
             std = L.get("std", "C++20")
             # write example files
-            for name, spec in L.get("files", {}).items():
+            files = dict(L.get("files", {}))
+            fdefaults = {k: files.pop(k) for k in list(files) if k in ("std", "maybe_unsupported", "run", "compare", "san", "flags")}
+            for name, spec in files.items():
                 if isinstance(spec, str):
                     spec = {"code": spec}
+                spec = {**fdefaults, **spec}
                 fname = f"{slug}{name}.cpp" if not name.endswith(".cpp") else name
                 rel = f"examples/{wdir}/{fname}"
                 (ROOT / rel).write_text(ded(spec["code"]) + "\n")

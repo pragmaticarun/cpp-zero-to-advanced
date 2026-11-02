@@ -252,6 +252,50 @@ Use it as a checklist: tick off what you can explain to a colleague without note
 | `std::void_t` detection idiom | C++17 | [Lesson 7.5](../week07/lesson05.md) |
 | `std::declval` | C++11 | [Lesson 7.5](../week07/lesson05.md) |
 | `std::conditional`, `std::decay`, `std::remove_cvref` | C++11/20 | [Lesson 7.5](../week07/lesson05.md) |
+| Concepts (`concept`) | C++20 | [Lesson 8.1](../week08/lesson01.md) |
+| `requires` clauses and `requires` expressions | C++20 | [Lesson 8.1](../week08/lesson01.md) |
+| Standard concepts (`<concepts>`, iterator/range concepts) | C++20 | [Lesson 8.1](../week08/lesson01.md) |
+| Constrained `auto` (`std::integral auto x`) | C++20 | [Lesson 8.1](../week08/lesson01.md) |
+| Subsumption / overload ordering by constraints | C++20 | [Lesson 8.1](../week08/lesson01.md) |
+| CRTP (curiously recurring template pattern) | C++98 | [Lesson 8.5](../week08/lesson05.md) |
+| Explicit object parameter (deducing `this`) | C++23 | [Lesson 8.5](../week08/lesson05.md) |
+| Static polymorphism vs dynamic polymorphism | — | [Lesson 8.5](../week08/lesson05.md) |
+| Template metaprogramming basics (recursive templates, type lists) | C++11 | [Lesson 8.5](../week08/lesson05.md) |
+| `std::integer_sequence` / `std::index_sequence` | C++14 | [Lesson 8.5](../week08/lesson05.md) |
+| Expression templates (overview) | — | [Lesson 8.5](../week08/lesson05.md) |
+
+## Compile-time programming
+
+| Feature | Standard | Taught in |
+|---|---|---|
+| `constexpr` variables and functions | C++11 (relaxed C++14) | [Lesson 8.2](../week08/lesson02.md) |
+| `constexpr` virtual, try, dynamic allocation in constant evaluation | C++20 | [Lesson 8.2](../week08/lesson02.md) |
+| `consteval` (immediate functions) | C++20 | [Lesson 8.2](../week08/lesson02.md) |
+| `constinit` | C++20 | [Lesson 8.2](../week08/lesson02.md) |
+| `if consteval` | C++23 | [Lesson 8.2](../week08/lesson02.md) |
+| `std::is_constant_evaluated` | C++20 | [Lesson 8.2](../week08/lesson02.md) |
+| Static initialization order fiasco | C++98 | [Lesson 8.2](../week08/lesson02.md) |
+
+## Functional programming
+
+| Feature | Standard | Taught in |
+|---|---|---|
+| Lambda expressions, captures by value/reference | C++11 | [Lesson 8.3](../week08/lesson03.md) |
+| Init captures, `mutable` | C++14 | [Lesson 8.3](../week08/lesson03.md) |
+| Generic lambdas | C++14 | [Lesson 8.3](../week08/lesson03.md) |
+| `constexpr` lambdas | C++17 | [Lesson 8.3](../week08/lesson03.md) |
+| `[*this]` capture | C++17 | [Lesson 8.3](../week08/lesson03.md) |
+| Template lambdas `[]<typename T>` | C++20 | [Lesson 8.3](../week08/lesson03.md) |
+| Lambdas in unevaluated contexts, default-constructible stateless lambdas | C++20 | [Lesson 8.3](../week08/lesson03.md) |
+| `static operator()` lambdas | C++23 | [Lesson 8.3](../week08/lesson03.md) |
+| Immediately-invoked lambdas (IILE) | — | [Lesson 8.3](../week08/lesson03.md) |
+| `std::function` | C++11 | [Lesson 8.4](../week08/lesson04.md) |
+| `std::move_only_function` | C++23 | [Lesson 8.4](../week08/lesson04.md) |
+| `std::function_ref` | C++26 (preview) | [Lesson 8.4](../week08/lesson04.md) |
+| `std::invoke`, `std::invoke_r` | C++17/23 | [Lesson 8.4](../week08/lesson04.md) |
+| `std::bind_front`, `std::bind_back` | C++20/23 | [Lesson 8.4](../week08/lesson04.md) |
+| Member function pointers | C++98 | [Lesson 8.4](../week08/lesson04.md) |
+| Type erasure (concept/model pattern) | — | [Lesson 8.4](../week08/lesson04.md) |
 
 ## C++26 preview items
 

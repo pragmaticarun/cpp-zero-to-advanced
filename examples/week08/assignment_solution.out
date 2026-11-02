@@ -1,0 +1,7 @@
+key a
+beep
+  [KeyPressed: 2 handler(s)]
+  [Resized: 0 handler(s)]
+resized to 1024x768
+  [Resized: 1 handler(s)]
+keys=1

@@ -1,0 +1,5 @@
+sine[0]=0 sine[64]=32767 sine[192]=-32767
+sum_squares(10)=385
+RIFF=0x46464952
+1.41421 1.41421
+frame_counter=1

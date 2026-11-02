@@ -101,6 +101,15 @@ nav:
   - 7.5 Type traits, if constexpr, and SFINAE: week07/lesson05.md
   - Week quiz: week07/quiz.md
   - Programming assignment: week07/assignment.md
+- 'Week 8: Concepts, compile-time programming, and lambdas':
+  - Overview: week08/index.md
+  - 8.1 Concepts and requires-clauses: week08/lesson01.md
+  - 8.2 constexpr, consteval, constinit, and if consteval: week08/lesson02.md
+  - 8.3 Lambdas in depth: week08/lesson03.md
+  - '8.4 Callables: std::function, move_only_function, and type erasure': week08/lesson04.md
+  - 8.5 CRTP, deducing this, and a taste of metaprogramming: week08/lesson05.md
+  - Week quiz: week08/quiz.md
+  - Programming assignment: week08/assignment.md
 - Capstones:
   - Capstone overview: capstone/index.md
   - 'A: Concurrent task library + CLI': capstone/threadpool.md
