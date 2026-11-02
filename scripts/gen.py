@@ -140,7 +140,7 @@ def main():
                     spec = A[key] if isinstance(A[key], dict) else {"code": A[key]}
                     (ROOT / rel).write_text(ded(spec["code"]) + "\n")
                     manifest[rel] = {"std": spec.get("std", A.get("std", "c++20")).lower(), "run": key == "solution",
-                                     "compare": spec.get("compare", True), "san": spec.get("san", []),
+                                     "compare": spec.get("compare", True), "san": spec.get("san", A.get("san", [])),
                                      "expect": "ok", "maybe_unsupported": spec.get("maybe_unsupported", False),
                                      "flags": spec.get("flags", []), "lesson": f"{wdir}/assignment"}
                     blk = code_block(rel)

@@ -1,0 +1,4 @@
+counter = 400000
+balances 1000 1000
+rate=48000 bits=24
+initialized 1 time(s)

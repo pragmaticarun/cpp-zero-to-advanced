@@ -1,0 +1,4 @@
+latch released after 4 workers
+barrier phases: 3, work items: 12
+max concurrent downloads: <= 2
+main's thread_local still 0

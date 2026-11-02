@@ -149,6 +149,15 @@ nav:
   - '12.7 A tour of the rest: random, regex, math, bits, limits, and more': week12/lesson07.md
   - Week quiz: week12/quiz.md
   - Programming assignment: week12/assignment.md
+- 'Week 13: Concurrency I: threads, locks, and synchronization':
+  - Overview: week13/index.md
+  - 13.1 Threads, jthread, and cooperative cancellation: week13/lesson01.md
+  - 13.2 Data races, mutexes, and deadlock: week13/lesson02.md
+  - 13.3 Condition variables and a thread-safe queue: week13/lesson03.md
+  - 13.4 Futures, promises, async, and packaged_task: week13/lesson04.md
+  - 13.5 Latches, barriers, semaphores, and thread_local: week13/lesson05.md
+  - Week quiz: week13/quiz.md
+  - Programming assignment: week13/assignment.md
 - Capstones:
   - Capstone overview: capstone/index.md
   - 'A: Concurrent task library + CLI': capstone/threadpool.md

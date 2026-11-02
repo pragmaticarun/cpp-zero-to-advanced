@@ -496,6 +496,40 @@ Use it as a checklist: tick off what you can explain to a colleague without note
 | Time zones: `zoned_time`, `tzdb` | C++20 | [Lesson 12.6](../week12/lesson06.md) |
 | Formatting chrono types with `std::format` | C++20 | [Lesson 12.6](../week12/lesson06.md) |
 
+## Concurrency
+
+| Feature | Standard | Taught in |
+|---|---|---|
+| `std::thread`, `join`, `detach` | C++11 | [Lesson 13.1](../week13/lesson01.md) |
+| `std::jthread` (auto-joining) | C++20 | [Lesson 13.1](../week13/lesson01.md) |
+| `std::stop_token`, `std::stop_source`, `std::stop_callback` | C++20 | [Lesson 13.1](../week13/lesson01.md) |
+| `std::this_thread::sleep_for`, `yield`, `get_id` | C++11 | [Lesson 13.1](../week13/lesson01.md) |
+| `std::thread::hardware_concurrency` | C++11 | [Lesson 13.1](../week13/lesson01.md) |
+| Passing arguments to threads (copies, `std::ref`) | C++11 | [Lesson 13.1](../week13/lesson01.md) |
+| Data races are undefined behaviour | C++11 | [Lesson 13.2](../week13/lesson02.md) |
+| `std::mutex`, `std::recursive_mutex`, `std::timed_mutex` | C++11 | [Lesson 13.2](../week13/lesson02.md) |
+| `std::lock_guard`, `std::unique_lock` | C++11 | [Lesson 13.2](../week13/lesson02.md) |
+| `std::scoped_lock` (deadlock-free multi-lock) | C++17 | [Lesson 13.2](../week13/lesson02.md) |
+| `std::shared_mutex`, `std::shared_lock` | C++14/17 | [Lesson 13.2](../week13/lesson02.md) |
+| `std::call_once`, `std::once_flag` | C++11 | [Lesson 13.2](../week13/lesson02.md) |
+| Thread-safe static local initialization | C++11 | [Lesson 13.2](../week13/lesson02.md) |
+| `std::condition_variable`, `wait` with predicate | C++11 | [Lesson 13.3](../week13/lesson03.md) |
+| Spurious wakeups and lost wakeups | C++11 | [Lesson 13.3](../week13/lesson03.md) |
+| `std::condition_variable_any` with `stop_token` | C++20 | [Lesson 13.3](../week13/lesson03.md) |
+| `notify_one` vs `notify_all` | C++11 | [Lesson 13.3](../week13/lesson03.md) |
+| Producer–consumer pattern | — | [Lesson 13.3](../week13/lesson03.md) |
+| `std::async` and launch policies | C++11 | [Lesson 13.4](../week13/lesson04.md) |
+| `std::future`, `std::shared_future` | C++11 | [Lesson 13.4](../week13/lesson04.md) |
+| `std::promise` | C++11 | [Lesson 13.4](../week13/lesson04.md) |
+| `std::packaged_task` | C++11 | [Lesson 13.4](../week13/lesson04.md) |
+| Exception propagation through futures | C++11 | [Lesson 13.4](../week13/lesson04.md) |
+| `wait_for` and `future_status` | C++11 | [Lesson 13.4](../week13/lesson04.md) |
+| `std::latch` | C++20 | [Lesson 13.5](../week13/lesson05.md) |
+| `std::barrier` with completion function | C++20 | [Lesson 13.5](../week13/lesson05.md) |
+| `std::counting_semaphore`, `std::binary_semaphore` | C++20 | [Lesson 13.5](../week13/lesson05.md) |
+| `thread_local` storage duration | C++11 | [Lesson 13.5](../week13/lesson05.md) |
+| Choosing a synchronization primitive | — | [Lesson 13.5](../week13/lesson05.md) |
+
 ## C++26 preview items
 
 C++26 was finalized in 2025–2026; compilers are still implementing it. These are covered in

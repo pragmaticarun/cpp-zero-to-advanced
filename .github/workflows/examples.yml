@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
+      - name: Allow ThreadSanitizer on high-entropy ASLR kernels
+        run: sudo sysctl vm.mmap_rnd_bits=28
       - name: Check examples with GCC 14 (sanitizers enabled where requested)
         env:
           CXX: g++-14

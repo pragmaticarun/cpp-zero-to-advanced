@@ -1,0 +1,5 @@
+means: 2.5 15
+exception crossed threads: no samples
+not ready yet
+promise delivered 42
+packaged_task: 42 (read twice: 42)

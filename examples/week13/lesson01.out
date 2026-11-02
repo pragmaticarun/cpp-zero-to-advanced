@@ -1,0 +1,4 @@
+1 4 9 16 <- decoded
+stop requested
+meter ran at least 5 ticks: true
+hardware threads known: true
