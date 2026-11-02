@@ -1,0 +1,10 @@
+hat=1 kick=3 snare=1 
+contains("tom") false, size still 3
+after operator[]: size 4
+try_emplace kick inserted? false value 3
+insert_or_assign hat inserted? false value 9
+keys in [j, s]: kick 
+house -> 124
+A4=440
+merged size 5, left in s2: 3
+largest now 50

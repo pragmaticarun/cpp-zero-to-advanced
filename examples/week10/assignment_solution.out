@@ -1,0 +1,4 @@
+get kick: 1
+  evict snare
+get snare: -1
+get hat: 3

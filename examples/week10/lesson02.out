@@ -1,0 +1,6 @@
+deque: 1..4 [2]=3
+list after splice: 1 10 20 2 3 | b.size()=0 | iterator still valid: 1
+forward_list sorted front: 1
+insert 20000 in the middle (your timings will differ):
+  vector: 2 ms
+  list:   158 ms

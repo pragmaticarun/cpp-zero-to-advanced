@@ -1,0 +1,5 @@
+undo: fade
+then: trim
+first packet: 1, last: 3
+5:encode audio 3:upload 1:thumbnail 
+next timer fires at 10ms

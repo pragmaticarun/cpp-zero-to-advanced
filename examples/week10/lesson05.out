@@ -1,0 +1,5 @@
+peak(all)=0.9 peak(first 2)=0.9
+channel 0 peak 0.4
+channel 1 peak 0.9
+pixel (1,2) is element 6 in memory
+column-major (1,2) is element 7

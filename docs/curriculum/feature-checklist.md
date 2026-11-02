@@ -334,6 +334,51 @@ Use it as a checklist: tick off what you can explain to a colleague without note
 | Erroneous behaviour for uninitialized reads | C++26 (preview) | [Lesson 9.5](../week09/lesson05.md) |
 | `std::unreachable` | C++23 | [Lesson 9.5](../week09/lesson05.md) |
 
+## Standard library: containers
+
+| Feature | Standard | Taught in |
+|---|---|---|
+| `std::vector`: size vs capacity, growth, `reserve`, `shrink_to_fit` | C++98 | [Lesson 10.1](../week10/lesson01.md) |
+| `emplace_back` vs `push_back` | C++11 | [Lesson 10.1](../week10/lesson01.md) |
+| Iterator invalidation rules | C++98 | [Lesson 10.1](../week10/lesson01.md) |
+| `std::erase` / `std::erase_if` (uniform erasure) | C++20 | [Lesson 10.1](../week10/lesson01.md) |
+| Erase-remove idiom | C++98 | [Lesson 10.1](../week10/lesson01.md) |
+| `std::vector<bool>` specialization | C++98 | [Lesson 10.1](../week10/lesson01.md) |
+| `append_range`, `insert_range` | C++23 | [Lesson 10.1](../week10/lesson01.md) |
+| `std::array`, `std::to_array` | C++11/20 | [Lesson 10.2](../week10/lesson02.md) |
+| `std::deque` | C++98 | [Lesson 10.2](../week10/lesson02.md) |
+| `std::list`, `splice` | C++98 | [Lesson 10.2](../week10/lesson02.md) |
+| `std::forward_list` | C++11 | [Lesson 10.2](../week10/lesson02.md) |
+| Complexity guarantees and cache effects | — | [Lesson 10.2](../week10/lesson02.md) |
+| `std::map`, `std::set`, `multimap`, `multiset` | C++98 | [Lesson 10.3](../week10/lesson03.md) |
+| `std::unordered_map`, `unordered_set` (+multi) | C++11 | [Lesson 10.3](../week10/lesson03.md) |
+| `try_emplace`, `insert_or_assign` | C++17 | [Lesson 10.3](../week10/lesson03.md) |
+| Node handles: `extract`, `merge` | C++17 | [Lesson 10.3](../week10/lesson03.md) |
+| `contains` | C++20 | [Lesson 10.3](../week10/lesson03.md) |
+| Heterogeneous lookup (transparent comparators/hashes) | C++14/20 | [Lesson 10.3](../week10/lesson03.md) |
+| Custom hash functions, `std::hash` specialization | C++11 | [Lesson 10.3](../week10/lesson03.md) |
+| `std::stack`, `std::queue` | C++98 | [Lesson 10.4](../week10/lesson04.md) |
+| `std::priority_queue` | C++98 | [Lesson 10.4](../week10/lesson04.md) |
+| `std::flat_map`, `std::flat_set` (+multi) | C++23 | [Lesson 10.4](../week10/lesson04.md) |
+| Sorted vector as a set/map | — | [Lesson 10.4](../week10/lesson04.md) |
+| `std::span` (static and dynamic extent) | C++20 | [Lesson 10.5](../week10/lesson05.md) |
+| `std::mdspan`, extents, layouts | C++23 | [Lesson 10.5](../week10/lesson05.md) |
+| Multidimensional `operator[]` | C++23 | [Lesson 10.5](../week10/lesson05.md) |
+| `std::inplace_vector` | C++26 (preview) | [Lesson 10.5](../week10/lesson05.md) |
+| Non-owning views and lifetime | — | [Lesson 10.5](../week10/lesson05.md) |
+
+## Standard library: iterators
+
+| Feature | Standard | Taught in |
+|---|---|---|
+| Iterator categories (input, output, forward, bidirectional, random access, contiguous) | C++98/20 | [Lesson 10.6](../week10/lesson06.md) |
+| C++20 iterator concepts | C++20 | [Lesson 10.6](../week10/lesson06.md) |
+| `std::begin/end/size/data/ssize` | C++11/17/20 | [Lesson 10.6](../week10/lesson06.md) |
+| Iterator adaptors: `reverse_iterator`, `back_inserter`, `move_iterator`, `istream_iterator` | C++98/11 | [Lesson 10.6](../week10/lesson06.md) |
+| `std::advance`, `next`, `prev`, `distance` | C++98/11 | [Lesson 10.6](../week10/lesson06.md) |
+| Writing a custom iterator | C++20 | [Lesson 10.6](../week10/lesson06.md) |
+| Sentinels | C++20 | [Lesson 10.6](../week10/lesson06.md) |
+
 ## C++26 preview items
 
 C++26 was finalized in 2025–2026; compilers are still implementing it. These are covered in

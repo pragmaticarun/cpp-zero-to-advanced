@@ -1,0 +1,6 @@
+size=1000 reallocations=11 (geometric growth; count is implementation-specific)
+with reserve: buffer moved? false
+samples=2
+removed 3: 5 3 7 1 | idiom gives same? true
+work.size()=4
+vector<bool> proxy reads true

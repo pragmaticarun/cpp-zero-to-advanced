@@ -119,6 +119,16 @@ nav:
   - 9.5 Assertions, contracts preview, and the undefined behaviour catalogue: week09/lesson05.md
   - Week quiz: week09/quiz.md
   - Programming assignment: week09/assignment.md
+- 'Week 10: The standard library I: containers and iterators':
+  - Overview: week10/index.md
+  - 10.1 std::vector in depth: week10/lesson01.md
+  - 10.2 array, deque, list, and forward_list: week10/lesson02.md
+  - 10.3 Associative and unordered containers: week10/lesson03.md
+  - 10.4 Container adaptors, flat_map and flat_set: week10/lesson04.md
+  - '10.5 Views over data: span, mdspan, string_view, and inplace_vector (preview)': week10/lesson05.md
+  - 10.6 Iterators and iterator categories: week10/lesson06.md
+  - Week quiz: week10/quiz.md
+  - Programming assignment: week10/assignment.md
 - Capstones:
   - Capstone overview: capstone/index.md
   - 'A: Concurrent task library + CLI': capstone/threadpool.md

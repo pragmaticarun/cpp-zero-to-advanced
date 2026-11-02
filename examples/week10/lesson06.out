@@ -1,0 +1,5 @@
+3 4 5 6 | sum=18 max=6
+copied 4, reversed: 6 5 4 3 
+parsed 5 ints, distance(begin,end)=5
+moved: ab, ssize=2
+third element: 4, prev: 1
