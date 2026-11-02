@@ -1,0 +1,12 @@
+construct:
+  + Effect base
+  + Gain member
+  Gain body
+  Gain::process(float 3)
+  Effect::process(int 7)
+  + Effect base
+  gain mute
+destroy:
+  - Effect base
+  - Gain member
+  - Effect base

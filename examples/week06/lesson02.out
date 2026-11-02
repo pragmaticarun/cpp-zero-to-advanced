@@ -1,0 +1,5 @@
+Effect ctor sees name(): effect
+Effect ctor sees name(): effect
+gain: 0.3 1.5 -1.8 
+clip: 0.3 1 -1 
+sizeof(NoVirtual)=4 sizeof(WithVirtual)=16

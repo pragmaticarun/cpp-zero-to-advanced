@@ -1,0 +1,5 @@
+dynamic type: Gain
+dynamic type: Reverb (room=0.5)
+bad_cast: first effect is not a Reverb
+rate=48000 codec=opus
+bad_any_cast: rate holds an int, not a double

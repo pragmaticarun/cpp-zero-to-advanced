@@ -83,6 +83,15 @@ nav:
   - 5.5 Aggregates, designated initializers, structured bindings, user-defined literals: week05/lesson05.md
   - Week quiz: week05/quiz.md
   - Programming assignment: week05/assignment.md
+- 'Week 6: Inheritance and runtime polymorphism':
+  - Overview: week06/index.md
+  - '6.1 Inheritance basics: base classes, access, construction order': week06/lesson01.md
+  - 6.2 Virtual functions, override, final, and how vtables work: week06/lesson02.md
+  - 6.3 Abstract classes, interfaces, virtual destructors, and slicing: week06/lesson03.md
+  - 6.4 Multiple and virtual inheritance (optional): week06/lesson04.md
+  - '6.5 RTTI: typeid, dynamic_cast, and std::any': week06/lesson05.md
+  - Week quiz: week06/quiz.md
+  - Programming assignment: week06/assignment.md
 - Capstones:
   - Capstone overview: capstone/index.md
   - 'A: Concurrent task library + CLI': capstone/threadpool.md

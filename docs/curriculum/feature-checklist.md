@@ -186,6 +186,37 @@ Use it as a checklist: tick off what you can explain to a colleague without note
 | User-defined literals | C++11 | [Lesson 5.5](../week05/lesson05.md) |
 | Standard literals: `s`, `sv`, `ms`, `i` | C++14 | [Lesson 5.5](../week05/lesson05.md) |
 
+## OOP: inheritance & polymorphism
+
+| Feature | Standard | Taught in |
+|---|---|---|
+| Public/protected/private inheritance | C++98 | [Lesson 6.1](../week06/lesson01.md) |
+| Construction/destruction order of bases and members | C++98 | [Lesson 6.1](../week06/lesson01.md) |
+| Calling base constructors; inheriting constructors `using Base::Base` | C++11 | [Lesson 6.1](../week06/lesson01.md) |
+| Name hiding in derived classes, `using Base::f` | C++98 | [Lesson 6.1](../week06/lesson01.md) |
+| `protected` members | C++98 | [Lesson 6.1](../week06/lesson01.md) |
+| Virtual functions and dynamic dispatch | C++98 | [Lesson 6.2](../week06/lesson02.md) |
+| `override` and `final` | C++11 | [Lesson 6.2](../week06/lesson02.md) |
+| Vtables and vptr (implementation model) | — | [Lesson 6.2](../week06/lesson02.md) |
+| Virtual calls in constructors/destructors | C++98 | [Lesson 6.2](../week06/lesson02.md) |
+| Covariant return types | C++98 | [Lesson 6.2](../week06/lesson02.md) |
+| Devirtualization | — | [Lesson 6.2](../week06/lesson02.md) |
+| Pure virtual functions, abstract classes | C++98 | [Lesson 6.3](../week06/lesson03.md) |
+| Interfaces as abstract base classes | — | [Lesson 6.3](../week06/lesson03.md) |
+| Virtual destructors (and when not to) | C++98 | [Lesson 6.3](../week06/lesson03.md) |
+| Object slicing | C++98 | [Lesson 6.3](../week06/lesson03.md) |
+| Polymorphic copy: `clone()` | — | [Lesson 6.3](../week06/lesson03.md) |
+| Non-virtual interface (NVI) idiom | — | [Lesson 6.3](../week06/lesson03.md) |
+| Multiple inheritance | C++98 | [Lesson 6.4](../week06/lesson04.md) |
+| The diamond problem, virtual inheritance | C++98 | [Lesson 6.4](../week06/lesson04.md) |
+| Pointer adjustment with multiple bases | — | [Lesson 6.4](../week06/lesson04.md) |
+| Mixins / interface-only multiple inheritance | — | [Lesson 6.4](../week06/lesson04.md) |
+| `dynamic_cast` (pointers and references) | C++98 | [Lesson 6.5](../week06/lesson05.md) |
+| `typeid`, `std::type_info`, `<typeinfo>` | C++98 | [Lesson 6.5](../week06/lesson05.md) |
+| `std::type_index` | C++11 | [Lesson 6.5](../week06/lesson05.md) |
+| `std::any` | C++17 | [Lesson 6.5](../week06/lesson05.md) |
+| `-fno-rtti` and its consequences | — | [Lesson 6.5](../week06/lesson05.md) |
+
 ## C++26 preview items
 
 C++26 was finalized in 2025–2026; compilers are still implementing it. These are covered in
