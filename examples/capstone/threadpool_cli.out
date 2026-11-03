@@ -1,0 +1,3 @@
+threads=4 jobs=32 queue=8
+longest Collatz chain below 32000: 307 steps
+stats: submitted=32 completed=32 failed=0 rejected=0

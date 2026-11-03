@@ -1,0 +1,3 @@
+received 5000 samples, in order: true
+last 8 readings average: 45.5
+window overwrote 4992 older readings; no heap used

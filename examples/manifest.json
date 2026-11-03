@@ -1,4 +1,53 @@
 {
+ "examples/capstone/ringbuffer_demo.cpp": {
+  "compare": true,
+  "expect": "ok",
+  "flags": [],
+  "lesson": "capstone/ringbuffer",
+  "maybe_unsupported": false,
+  "run": true,
+  "san": [
+   "thread"
+  ],
+  "std": "c++20"
+ },
+ "examples/capstone/ringbuffer_tests.cpp": {
+  "compare": true,
+  "expect": "ok",
+  "flags": [],
+  "lesson": "capstone/ringbuffer",
+  "maybe_unsupported": false,
+  "run": true,
+  "san": [
+   "address",
+   "undefined"
+  ],
+  "std": "c++20"
+ },
+ "examples/capstone/threadpool_cli.cpp": {
+  "compare": true,
+  "expect": "ok",
+  "flags": [],
+  "lesson": "capstone/threadpool",
+  "maybe_unsupported": false,
+  "run": true,
+  "san": [
+   "thread"
+  ],
+  "std": "c++20"
+ },
+ "examples/capstone/threadpool_tests.cpp": {
+  "compare": true,
+  "expect": "ok",
+  "flags": [],
+  "lesson": "capstone/threadpool",
+  "maybe_unsupported": false,
+  "run": true,
+  "san": [
+   "thread"
+  ],
+  "std": "c++20"
+ },
  "examples/week01/assignment_solution.cpp": {
   "compare": true,
   "expect": "ok",

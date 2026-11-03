@@ -152,6 +152,35 @@ def main():
             wnav.append({"Programming assignment": f"{wdir}/assignment.md"})
         nav_weeks.append({f"Week {n}: {W['title']}": wnav})
 
+
+    # capstones
+    capf = CONTENT / "capstones.py"
+    if capf.exists():
+        C = runpy.run_path(str(capf))
+        (EX / "capstone").mkdir(exist_ok=True)
+        (DOCS / "capstone").mkdir(exist_ok=True)
+        for hname, code in C.get("HEADERS", {}).items():
+            (EX / "capstone" / hname).write_text(ded(code) + "\n")
+        for slug, cap in C["CAPSTONES"].items():
+            for name, spec in cap.get("files", {}).items():
+                spec = {"code": spec} if isinstance(spec, str) else spec
+                rel = f"examples/capstone/{slug}_{name}.cpp"
+                (ROOT / rel).write_text(ded(spec["code"]) + "\n")
+                manifest[rel] = {"std": spec.get("std", "c++20"), "run": spec.get("run", True),
+                                 "compare": spec.get("compare", True), "san": spec.get("san", []),
+                                 "expect": "ok", "maybe_unsupported": False, "flags": spec.get("flags", []),
+                                 "lesson": f"capstone/{slug}"}
+            def crep(m, slug=slug):
+                kind, name = m.group(1), m.group(2)
+                if kind == "header":
+                    return code_block(f"examples/capstone/{name}")
+                rel = f"examples/capstone/{slug}_{name}.cpp"
+                out = code_block(rel)
+                if manifest[rel]["run"]:
+                    note = "" if manifest[rel]["compare"] else " (yours may differ: timing/threads)"
+                    out += f'\n\n**Output**{note}:\n\n```text\n--8<-- "{rel[:-4]}.out"\n```'
+                return out
+            (DOCS / "capstone" / f"{slug}.md").write_text(re.sub(r"\{\{(file|header):([A-Za-z0-9_.]+)\}\}", crep, ded(cap["md"])) + "\n")
     (EX / "manifest.json").write_text(json.dumps(manifest, indent=1, sort_keys=True))
     # feature checklist
     extra = runpy.run_path(str(CONTENT / "checklist_extra.py"))

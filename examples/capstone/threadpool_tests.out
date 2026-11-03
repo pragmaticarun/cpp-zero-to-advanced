@@ -1,0 +1,7 @@
+[ RUN ] results
+[ RUN ] exceptions propagate
+[ RUN ] back-pressure / try_submit
+[ RUN ] wait_idle and stats
+[ RUN ] shutdown modes
+[ RUN ] bad arguments
+ALL TESTS PASSED

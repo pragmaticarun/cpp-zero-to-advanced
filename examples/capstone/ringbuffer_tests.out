@@ -1,0 +1,6 @@
+[ RUN ] run-time wrap-around stress
+[ RUN ] peek / clear
+[ RUN ] non-trivial element type
+[ RUN ] SPSC single-threaded semantics
+compile-time tests: 4 passed (static_assert)
+ALL TESTS PASSED
