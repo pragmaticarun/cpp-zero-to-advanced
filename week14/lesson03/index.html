@@ -5467,6 +5467,13 @@ in real systems — and the core of the first capstone. Let's build a small, cor
 </ul>
 <p>Because <code>packaged_task</code> is move-only and <code>std::function</code> requires copyable callables, we hold it via
 <code>std::shared_ptr</code> (portable everywhere); with C++23 <code>std::move_only_function</code> you can store it directly.</p>
+<div class="admonition note">
+<p class="admonition-title">Why CI doesn't run this one under ThreadSanitizer</p>
+<p>GCC 14's TSan reports a false "data race" in <code>std::exception_ptr</code>'s reference count when an exception
+travels through a future: the count is updated inside the prebuilt (uninstrumented) <code>libstdc++.so</code>,
+so TSan can't see its atomics. It's a tooling limitation, not a bug in the pool. The capstone's tests
+run under TSan with Clang.</p>
+</div>
 <div class="highlight"><span class="filename">examples/week14/lesson03.cpp</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;condition_variable&gt;</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;deque&gt;</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;functional&gt;</span>
