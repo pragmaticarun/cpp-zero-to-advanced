@@ -1101,9 +1101,7 @@
   "lesson": "week14/lesson03",
   "maybe_unsupported": false,
   "run": true,
-  "san": [
-   "thread"
-  ],
+  "san": [],
   "std": "c++20"
  },
  "examples/week14/lesson04.cpp": {

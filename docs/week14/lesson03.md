@@ -18,6 +18,12 @@ in real systems — and the core of the first capstone. Let's build a small, cor
 Because `packaged_task` is move-only and `std::function` requires copyable callables, we hold it via
 `std::shared_ptr` (portable everywhere); with C++23 `std::move_only_function` you can store it directly.
 
+!!! note "Why CI doesn't run this one under ThreadSanitizer"
+    GCC 14's TSan reports a false "data race" in `std::exception_ptr`'s reference count when an exception
+    travels through a future: the count is updated inside the prebuilt (uninstrumented) `libstdc++.so`,
+    so TSan can't see its atomics. It's a tooling limitation, not a bug in the pool. The capstone's tests
+    run under TSan with Clang.
+
 ```cpp title="examples/week14/lesson03.cpp"
 --8<-- "examples/week14/lesson03.cpp"
 ```
