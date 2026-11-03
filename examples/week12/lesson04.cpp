@@ -26,7 +26,11 @@ int main() {
     std::println("{1} before {0}", "world", "hello");
     std::println("{:>10.1f}", Level{-3.25});
     std::vector<int> v{1, 2, 3};
-    std::println("ranges: {}", v);  // vector<string> needs GCC 15+
+#if defined(__cpp_lib_format_ranges)
+    std::println("ranges: {}", v);                  // C++23 range formatting (GCC 15+, Clang 16+)
+#else
+    std::println("ranges: [{}, {}, {}]", v[0], v[1], v[2]);   // fallback for GCC 14
+#endif
     std::string s = std::format("{}-{:03}", "take", 7);
     std::cout << s << '\n';
 
