@@ -2,7 +2,7 @@ left    |   right|  mid   |
 0003.142 +42 0xff 0b101 1.234568e+04
 hello before world
       -3.2 dB
-ranges: [1, 2, 3] ["a", "b"]
+ranges: [1, 2, 3]
 take-007
 ff 10 16
 0.67

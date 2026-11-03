@@ -688,7 +688,8 @@ private:
         for (;;) {
             std::function<void()> j;
             { std::unique_lock l{m_}; cv_.wait(l, [&] { return stop_ || !q_.empty(); });
-              if (q_.empty()) return; j = std::move(q_.front()); q_.pop_front(); }
+              if (q_.empty()) { return; }
+              j = std::move(q_.front()); q_.pop_front(); }
             j();
         }
     }

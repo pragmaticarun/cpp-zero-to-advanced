@@ -393,7 +393,7 @@ int main() {
     std::println("{1} before {0}", "world", "hello");
     std::println("{:>10.1f}", Level{-3.25});
     std::vector<int> v{1, 2, 3};
-    std::println("ranges: {} {}", v, std::vector<std::string>{"a", "b"});
+    std::println("ranges: {}", v);  // vector<string> needs GCC 15+
     std::string s = std::format("{}-{:03}", "take", 7);
     std::cout << s << '\n';
 
