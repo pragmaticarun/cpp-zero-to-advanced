@@ -2,134 +2,570 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/</loc>
-         <lastmod>2026-11-02</lastmod>
+         <lastmod>2026-11-03</lastmod>
     </url>
     <url>
          <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/how-to-take/</loc>
-         <lastmod>2026-11-02</lastmod>
+         <lastmod>2026-11-03</lastmod>
     </url>
     <url>
          <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/license/</loc>
-         <lastmod>2026-11-02</lastmod>
+         <lastmod>2026-11-03</lastmod>
     </url>
     <url>
          <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/setup/</loc>
-         <lastmod>2026-11-02</lastmod>
+         <lastmod>2026-11-03</lastmod>
     </url>
     <url>
          <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/sources/</loc>
-         <lastmod>2026-11-02</lastmod>
+         <lastmod>2026-11-03</lastmod>
     </url>
     <url>
          <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/capstone/</loc>
-         <lastmod>2026-11-02</lastmod>
+         <lastmod>2026-11-03</lastmod>
     </url>
     <url>
          <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/capstone/ringbuffer/</loc>
-         <lastmod>2026-11-02</lastmod>
+         <lastmod>2026-11-03</lastmod>
     </url>
     <url>
          <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/capstone/threadpool/</loc>
-         <lastmod>2026-11-02</lastmod>
+         <lastmod>2026-11-03</lastmod>
     </url>
     <url>
          <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/curriculum/feature-checklist/</loc>
-         <lastmod>2026-11-02</lastmod>
+         <lastmod>2026-11-03</lastmod>
     </url>
     <url>
          <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week01/</loc>
-         <lastmod>2026-11-02</lastmod>
+         <lastmod>2026-11-03</lastmod>
     </url>
     <url>
          <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week01/assignment/</loc>
-         <lastmod>2026-11-02</lastmod>
+         <lastmod>2026-11-03</lastmod>
     </url>
     <url>
          <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week01/lesson01/</loc>
-         <lastmod>2026-11-02</lastmod>
+         <lastmod>2026-11-03</lastmod>
     </url>
     <url>
          <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week01/lesson02/</loc>
-         <lastmod>2026-11-02</lastmod>
+         <lastmod>2026-11-03</lastmod>
     </url>
     <url>
          <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week01/lesson03/</loc>
-         <lastmod>2026-11-02</lastmod>
+         <lastmod>2026-11-03</lastmod>
     </url>
     <url>
          <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week01/lesson04/</loc>
-         <lastmod>2026-11-02</lastmod>
+         <lastmod>2026-11-03</lastmod>
     </url>
     <url>
          <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week01/lesson05/</loc>
-         <lastmod>2026-11-02</lastmod>
+         <lastmod>2026-11-03</lastmod>
     </url>
     <url>
          <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week01/quiz/</loc>
-         <lastmod>2026-11-02</lastmod>
+         <lastmod>2026-11-03</lastmod>
     </url>
     <url>
          <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week02/</loc>
-         <lastmod>2026-11-02</lastmod>
+         <lastmod>2026-11-03</lastmod>
     </url>
     <url>
          <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week02/assignment/</loc>
-         <lastmod>2026-11-02</lastmod>
+         <lastmod>2026-11-03</lastmod>
     </url>
     <url>
          <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week02/lesson01/</loc>
-         <lastmod>2026-11-02</lastmod>
+         <lastmod>2026-11-03</lastmod>
     </url>
     <url>
          <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week02/lesson02/</loc>
-         <lastmod>2026-11-02</lastmod>
+         <lastmod>2026-11-03</lastmod>
     </url>
     <url>
          <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week02/lesson03/</loc>
-         <lastmod>2026-11-02</lastmod>
+         <lastmod>2026-11-03</lastmod>
     </url>
     <url>
          <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week02/lesson04/</loc>
-         <lastmod>2026-11-02</lastmod>
+         <lastmod>2026-11-03</lastmod>
     </url>
     <url>
          <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week02/lesson05/</loc>
-         <lastmod>2026-11-02</lastmod>
+         <lastmod>2026-11-03</lastmod>
     </url>
     <url>
          <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week02/quiz/</loc>
-         <lastmod>2026-11-02</lastmod>
+         <lastmod>2026-11-03</lastmod>
     </url>
     <url>
          <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week03/</loc>
-         <lastmod>2026-11-02</lastmod>
+         <lastmod>2026-11-03</lastmod>
     </url>
     <url>
          <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week03/assignment/</loc>
-         <lastmod>2026-11-02</lastmod>
+         <lastmod>2026-11-03</lastmod>
     </url>
     <url>
          <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week03/lesson01/</loc>
-         <lastmod>2026-11-02</lastmod>
+         <lastmod>2026-11-03</lastmod>
     </url>
     <url>
          <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week03/lesson02/</loc>
-         <lastmod>2026-11-02</lastmod>
+         <lastmod>2026-11-03</lastmod>
     </url>
     <url>
          <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week03/lesson03/</loc>
-         <lastmod>2026-11-02</lastmod>
+         <lastmod>2026-11-03</lastmod>
     </url>
     <url>
          <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week03/lesson04/</loc>
-         <lastmod>2026-11-02</lastmod>
+         <lastmod>2026-11-03</lastmod>
     </url>
     <url>
          <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week03/lesson05/</loc>
-         <lastmod>2026-11-02</lastmod>
+         <lastmod>2026-11-03</lastmod>
     </url>
     <url>
          <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week03/quiz/</loc>
-         <lastmod>2026-11-02</lastmod>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week04/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week04/assignment/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week04/lesson01/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week04/lesson02/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week04/lesson03/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week04/lesson04/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week04/lesson05/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week04/quiz/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week05/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week05/assignment/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week05/lesson01/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week05/lesson02/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week05/lesson03/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week05/lesson04/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week05/lesson05/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week05/quiz/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week06/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week06/assignment/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week06/lesson01/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week06/lesson02/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week06/lesson03/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week06/lesson04/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week06/lesson05/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week06/quiz/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week07/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week07/assignment/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week07/lesson01/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week07/lesson02/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week07/lesson03/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week07/lesson04/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week07/lesson05/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week07/quiz/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week08/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week08/assignment/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week08/lesson01/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week08/lesson02/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week08/lesson03/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week08/lesson04/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week08/lesson05/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week08/quiz/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week09/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week09/assignment/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week09/lesson01/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week09/lesson02/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week09/lesson03/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week09/lesson04/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week09/lesson05/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week09/quiz/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week10/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week10/assignment/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week10/lesson01/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week10/lesson02/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week10/lesson03/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week10/lesson04/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week10/lesson05/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week10/lesson06/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week10/quiz/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week11/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week11/assignment/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week11/lesson01/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week11/lesson02/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week11/lesson03/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week11/lesson04/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week11/lesson05/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week11/quiz/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week12/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week12/assignment/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week12/lesson01/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week12/lesson02/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week12/lesson03/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week12/lesson04/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week12/lesson05/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week12/lesson06/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week12/lesson07/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week12/quiz/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week13/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week13/assignment/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week13/lesson01/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week13/lesson02/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week13/lesson03/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week13/lesson04/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week13/lesson05/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week13/quiz/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week14/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week14/assignment/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week14/lesson01/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week14/lesson02/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week14/lesson03/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week14/lesson04/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week14/lesson05/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week14/lesson06/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week14/quiz/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week15/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week15/assignment/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week15/lesson01/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week15/lesson02/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week15/lesson03/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week15/lesson04/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week15/lesson05/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week15/lesson06/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week15/quiz/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week16/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week16/assignment/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week16/lesson01/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week16/lesson02/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week16/lesson03/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week16/lesson04/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week16/lesson05/</loc>
+         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pragmaticarun.github.io/cpp-zero-to-advanced/week16/quiz/</loc>
+         <lastmod>2026-11-03</lastmod>
     </url>
 </urlset>
